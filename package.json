@@ -1,0 +1,25 @@
+{
+  "name": "mussacafec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1227JL/mussaCafec.git"
+  },
+  "keywords": [
+    "mussa",
+    "cafec",
+    "sennova",
+    "SENA"
+  ],
+  "author": "Eduar Cardenas, Julian López",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1227JL/mussaCafec/issues"
+  },
+  "homepage": "https://github.com/1227JL/mussaCafec#readme"
+}
