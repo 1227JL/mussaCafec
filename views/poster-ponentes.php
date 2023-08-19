@@ -1,4 +1,17 @@
-<section class="categorias" id="ponente">
+<link rel="stylesheet" href="../css/formularios.css">
+<div class="select-categoria">
+    <h1>Seleccione su categoría</h1>
+    <div class="">
+        <input type="checkbox" name="poster" id="checkbox-poster">
+        <label for="checkbox-poster">Poster</label>
+    </div>
+    <div class="">
+        <input type="checkbox" name="ponente" id="checkbox-ponente">
+        <label for="checkbox-ponente">Ponente</label>
+    </div>
+</div>
+
+<section class="categorias seccion" id="ponente">
     <div class="categorias_div">
         <div class="title-categorias">
             <h1>Categoria:Ponente</h1>
@@ -8,7 +21,7 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPonentes.php" method="POST" class="form" enctype="multipart/form-data">
+            <form action="./config/registrarPonentes.php" method="POST" class="form" id="form-ponente" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="eje" class="text">Eje tematico:</label>
                         <input type="text" placeholder="..." name="ejetematico" class="input" id="eje">
@@ -30,7 +43,7 @@
                     <div class="mostrar-input-sena">
                         <div class="coolinput">
                             <label for="titulada" class="text">Titulada:</label>
-                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada" >
+                            <input type="text" placeholder="Nombre de la titulada.." name="titulada" class="input" id="titulada">
                         </div>
 
                         <div class="coolinput">
@@ -83,7 +96,7 @@
     </div>
 </section>
 <!-- FORMULARIO PARA LA CATEGORIA POSTER -->
-<section class="categorias" id="poster">
+<section class="categorias seccion" id="poster">
     <div class="categorias_div">
         <div class="title-categorias">
             <h1>Categoria:Poster</h1>
@@ -93,14 +106,14 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPoster.php" method="POST" class="form" enctype="multipart/form-data">
+            <form action="./config/registrarPoster.php" method="POST" id="form-poster" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucion" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucion">
                     </div>
                     <div class="coolinput">
                         <label for="participantes" class="text">Participantes:</label>
-                        <input type="text" min="1" max="3" placeholder="Ingrese el número de participantes (máximo 3)" class="input" id="participantes">
+                        <input type="text" min="1" max="3" placeholder="Ingrese el número de participantes (máximo 3)" class="input" id="participantes" name="participantes">
                     </div>
                     <div id="contenedorParticipantes"></div>
                     <div class="coolinput">
@@ -122,3 +135,6 @@
         </div>
     </div>
 </section>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/jquery_validate.js"></script>
+<script src="../js/form_academico.js"></script>

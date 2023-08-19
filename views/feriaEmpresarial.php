@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/formularios.css">
 <section class="categorias" id="FeriaEmpresarial">
     <div class="categorias_div">
         <div class="title-categorias">
@@ -8,7 +9,7 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarFeria.php" method="POST" class="form" enctype="multipart/form-data">
+            <form action="./config/registrarFeria.php" method="POST" id="form-feria" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucionFeria" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucionFeria">

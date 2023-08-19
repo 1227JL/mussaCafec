@@ -1,22 +1,8 @@
 @import "config.css";
-.submenu-nav{
-    display: flex;
-    justify-content:space-evenly;
-    text-align: center;
-    padding: 5px 0;
-    background: #38a900ce;
-    margin-bottom:60px ;
-}
-.submenu-nav a{
-    font-family:"WorkSans-Italic";
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
-}
-.submenu-nav a:hover{
-    color: white;
-}
 /*Estilos para el formulario*/
+.seccion {
+    display: none;
+}
 .categorias{
     margin:4rem 0;
 }

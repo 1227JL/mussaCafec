@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/formularios.css">
 <section class="categorias" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
@@ -26,28 +27,20 @@
                         <span class="form-title">Nombre completo del participantes o participantes (máx. 2 por categoría)</span>
                     </div>
                     <div class="coolinput">
-                        <label for="nombre1" class="text">Nombre del participante:</label>
-                        <input type="text" placeholder="..." class="input" id="nombre1" name="nombre1">
+                        <label for="tituloR" class="text">Titulo de proyecto:</label>
+                        <input type="text" placeholder="..." class="input" id="tituloR" name="tituloR">
                     </div>
                     <div class="coolinput">
-                        <label for="Email1" class="text">Email:</label>
-                        <input type="email" placeholder="Email del primer participante..." name="Email1" class="input" id="Email1">
+                        <label for="Email" class="text">Email:</label>
+                        <input type="email" placeholder="Ingresa un correo ..." name="correo" class="input" id="Email">
                     </div>
                     <div class="coolinput">
-                        <label for="contacto1" class="text">Contacto:</label>
-                        <input type="text" placeholder="Contacto del primer participante..." name="contacto1" class="input" id="contacto1">
+                        <label for="contacto" class="text">Contacto:</label>
+                        <input type="text" placeholder="Define un contacto..." name="contacto" class="input" id="contacto">
                     </div>
                     <div class="coolinput">
-                        <label for="nombre2" class="text">Nombre del participante 2:</label>
-                        <input type="text" placeholder="..." class="input" id="nombre2" name="nombre2">
-                    </div>
-                    <div class="coolinput">
-                        <label for="Email2" class="text">Email:</label>
-                        <input type="email" placeholder="Email del segundo participante..." name="Email2" class="input" id="Email2">
-                    </div>
-                    <div class="coolinput">
-                        <label for="contacto2" class="text">Contacto:</label>
-                        <input type="text" placeholder="Contacto del segundo participante..." name="contacto2" class="input" id="contacto2">
+                        <label for="confirmacion" class="text">Los participantes solo deben estar registrados en un solo proyecto:</label>
+                        <input type="checkbox" placeholder="Define un contacto..." name="confirmacion" class="input" id="confirmacion">
                     </div>
                     <div class="coolinput">
                         <input type="submit" value="Registrarme" class="button-registro">
