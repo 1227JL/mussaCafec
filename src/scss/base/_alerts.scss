@@ -1,0 +1,7 @@
+.alert-error {
+    @include alert($accent-200, $bg-100);
+}
+
+.alert-success {
+    @include alert($primary-100, $bg-100);
+}

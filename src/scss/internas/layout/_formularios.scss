@@ -1,0 +1,113 @@
+.formularios {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+
+        .fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+            legend{ 
+                font-weight: $black;
+                font-size: 1.8rem;
+            }
+            
+            .field {
+                .add-participante {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    
+                    @include tablet {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    input[type='text']{
+                        flex: 3;
+                    }
+                    button {
+                        margin: 0;
+                    }
+                }
+    
+                .group-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+    
+                    .list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+    
+                        @include tablet {
+                            flex-direction: row;
+                        }
+    
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 1rem;
+                            list-style: none;
+                            padding: 1rem 1.5rem;
+                            border-radius: .5rem;
+                            background-color: darken($bg-100, 3);
+                            font-size: 1.2rem;
+                            width: 100%;
+        
+                            button {
+                                width: 2rem;
+                                height: 2rem;
+                                background-color: $accent-200;
+                                border: none;
+                                color: $bg-100;
+                                font-weight: $bold;
+                                border-radius: 100%;
+                                transition: background-color .3s ease-out;
+                                text-align: center;
+                                &:hover {
+                                    cursor: pointer;
+                                    background-color: darken($accent-200, 5);
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+
+            &.fieldset-contacto {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .participant {
+
+                    h4 {
+                        text-align: center;
+                    }
+
+                    .field {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        input[type='submit']{
+            padding: 1.5rem;
+        }
+    }
+}
