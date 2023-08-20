@@ -61,12 +61,12 @@ CREATE TABLE feria_empresarial (
 
 CREATE TABLE robotica (
     id int(6) not null auto_increment,
-    categoria VARCHAR(25) not null,
+    categoria VARCHAR(40) not null,
     institucion VARCHAR(100) not null,
     nombre_proyecto VARCHAR(60) not null,
     contacto VARCHAR(15) not null,
-    correo varchar(25)not null,
-    confirmacion varchar(10) not null,
+    correo varchar(50)not null,
+    confirmacion varchar(20) not null,
     CONSTRAINT pk_robotica PRIMARY KEY (id)
 )ENGINE=InnoDb;
 

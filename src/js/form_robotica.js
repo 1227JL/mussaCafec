@@ -1,10 +1,8 @@
 //funcion para descargar el archivo Robotica
 function descargarArchivoRobotica() {
-    var archivoRobotica = "./resources/TORNEO-DE-ROBOTICA-SENA-CAFEC_esp_técnicas_cat.pdf"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
+    var archivoRobotica = "../../resources/formatos/ITORNEO_ROBOTICA_SENA_2023.pdf"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
     // Obtén la extensión del archivo seleccionado
-    var extensionRobotica = archivoRobotica.split('.pdf').pop().toLowerCase();
-    // Define el nombre del archivo para descarga
-    var nombreArchivoRobotica = "TORNEO-DE-ROBOTICA-SENA-CAFEC_esp_técnicas_cat" + extensionRobotica;
+    var nombreArchivoRobotica = "TORNEO-DE-ROBOTICA-SENA-CAFEC_esp_técnicas_cat.pdf";
     // Crea un enlace <a> temporal para la descarga
     var enlaceDescargaRobotica = document.createElement('a');
     enlaceDescargaRobotica.href = archivoRobotica;
@@ -14,7 +12,7 @@ function descargarArchivoRobotica() {
 }
 
 $(document).ready(function(){
-    $("#form-feria").validate({
+    $("#form-robotica").validate({
 
         rules:{
             categoria:{

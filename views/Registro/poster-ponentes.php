@@ -1,6 +1,21 @@
 <?php
     require_once '../../includes/templates/header.php';
+    require_once '../../includes/config/utils.php';
 ?>
+<?php if(isset($_SESSION['registrado'] )): ?>
+<div class='message-register'>
+    <?= $_SESSION['registrado'] ; ?>
+</div>
+<?php endif; ?>
+
+<div class="errores-archivos">
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'tamaño'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-docx'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'error-archivo'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-pdf'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'numerico'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
+</div>
 <div class="select-categoria">
     <h1>Seleccione su categoría</h1>
     <div class="">
@@ -23,7 +38,7 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPonentes.php" method="POST" class="form" id="form-ponente" enctype="multipart/form-data">
+            <form action="../../includes/config/registrarPonentes.php" method="POST" class="form" id="form-ponente" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="eje" class="text">Eje tematico:</label>
                         <input type="text" placeholder="..." name="ejetematico" class="input" id="eje">
@@ -108,7 +123,7 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarPoster.php" method="POST" id="form-poster" class="form" enctype="multipart/form-data">
+            <form action="../../includes/config/registrarPoster.php" method="POST" id="form-poster" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucion" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucion">
@@ -137,6 +152,5 @@
         </div>
     </div>
 </section>
-<script src="../../src/js/jquery-3.2.1.js"></script>
-<script src="../../src/js/jquery_validate.js"></script>
+<?php BorrarErrores(); ?>
 <script src="../../src/js/form_academico.js"></script>
