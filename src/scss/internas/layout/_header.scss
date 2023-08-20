@@ -68,16 +68,17 @@ header {
                 .splide__slide {
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-position: center center;
-
+                    
                     &.slide-1 {
                         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide2.jpeg');
+                        background-position: center center;
                     }
                     &.slide-2 {
                         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide1.jpeg');
                     }
                     &.slide-3 {
                         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide3.jpeg');
+                        background-position: right;
                     }
                 }
             }

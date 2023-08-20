@@ -31,13 +31,16 @@
             <h1 class="heading">Participa en nuestros concursos</h1>
             <div class="cards">
                 <div class="card">
-                    <button class="boton-verde-block">Inscribete</button>
+                    <h1>Academico</h1>
+                    <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
                 </div>
                 <div class="card">
-                    <button class="boton-verde-block">Inscribete</button>
+                    <h1>Feria Empresarial</h1>
+                    <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
                 </div>
                 <div class="card">
-                    <button class="boton-verde-block">Inscribete</button>
+                    <h1>Torneo de Robótica</h1>
+                    <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
                 </div>
             </div>
         </section>
