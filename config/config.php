@@ -1,8 +1,6 @@
 <?php 
 
 define('TEMPLATES_URL', 'includes/templates');
-var_dump(TEMPLATES_URL);
-
 
 function incluirTemplate( string $nombre, bool $inicio = false ) {
     include TEMPLATES_URL."/$nombre.php";

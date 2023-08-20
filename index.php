@@ -1,6 +1,7 @@
 <?php
     require_once 'config/config.php';
-    incluirTemplate('header');
+    $inicio = true;
+    incluirTemplate('header', $inicio);
 ?>
     <main class="inicio">
         <section class="concursos">

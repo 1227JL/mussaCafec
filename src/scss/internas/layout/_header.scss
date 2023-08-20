@@ -26,12 +26,39 @@ header {
             }
         }
     }
+
+    &.absolute {
+        .nav {
+            position: absolute;
+        }
+    }
+
+    &.relative {
+        background-color: $primary-200;
+        padding: 2rem;
+        h1 {
+            // color: $text-100;
+        }
+        .nav {
+            position: relative;
+            margin: 0 auto;
+    
+            .nav__link{
+    
+                .nav__item {
+    
+                    a {
+                        // color: $text-100;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .nav {
     display: flex;
     align-items: center;
-    position: absolute;
     width: 100%;
     padding: 0 5rem;
     margin-top: 2rem;
@@ -62,4 +89,6 @@ header {
         }
     }
 
-}    
+   
+
+}   
