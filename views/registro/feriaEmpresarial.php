@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/formularios.css">
+
 <section class="categorias" id="FeriaEmpresarial">
     <div class="categorias_div">
         <div class="title-categorias">

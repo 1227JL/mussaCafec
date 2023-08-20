@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/formularios.css">
+<?php heade ?>
 <section class="categorias" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
