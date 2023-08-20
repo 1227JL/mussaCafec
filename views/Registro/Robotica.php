@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="../css/formularios.css">
+<?php
+    require_once '../../includes/templates/header.php';
+?>
 <section class="categorias" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">

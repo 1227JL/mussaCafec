@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="../css/formularios.css">
+<?php
+    require_once '../../includes/templates/header.php';
+?>
 <div class="select-categoria">
     <h1>Seleccione su categoría</h1>
     <div class="">
-        <input type="checkbox" name="poster" id="checkbox-poster">
+        <input type="checkbox" name="poster" id="checkbox-poster" >
         <label for="checkbox-poster">Poster</label>
     </div>
     <div class="">
@@ -135,6 +137,6 @@
         </div>
     </div>
 </section>
-<script src="../js/jquery-3.2.1.js"></script>
-<script src="../js/jquery_validate.js"></script>
-<script src="../js/form_academico.js"></script>
+<script src="../../js/jquery-3.2.1.js"></script>
+<script src="../../js/jquery_validate.js"></script>
+<script src="../../js/form_academico.js"></script>

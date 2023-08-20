@@ -1,5 +1,13 @@
 <?php 
 
+define('TEMPLATES_URL', 'includes/templates');
+var_dump(TEMPLATES_URL);
+
+
+function incluirTemplate( string $nombre, bool $inicio = false ) {
+    include TEMPLATES_URL."/$nombre.php";
+}
+
 function limpiar_cadena($cadena){
     $cadena = trim($cadena); // la funcion trim elimina espacios en blanco del inicio o al final de la cadena
     $cadena = stripcslashes($cadena);  //stripcslashes quita las barras en un string con comillas escapadas
