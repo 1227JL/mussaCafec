@@ -1,13 +1,13 @@
 window.addEventListener('load', ()=> {
+    const splideElements = document.querySelectorAll('.splide');
 
-    if (document.querySelector('.splide')) {
-        const splide = new Splide('.splide', {
+    // Recorre cada elemento y crea una instancia de Splide
+    splideElements.forEach(element => {
+        const splide = new Splide(element, {
             perPage: 1,
             rewind: true,
         });
     
         splide.mount();
-    }
-    
-    
+    });
 })
