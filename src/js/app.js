@@ -10,4 +10,19 @@ window.addEventListener('load', ()=> {
     
         splide.mount();
     });
+
+    const menu = document.querySelector('#menu');
+    const modal = document.querySelector('#modal');
+    const closeButton = document.querySelector('#closeButton');
+
+    function closeModal(){
+        if (!modal.classList.contains('off')) {
+            modal.classList.add("off");
+        } else{
+            modal.classList.remove("off");
+        };
+    }
+
+    menu.addEventListener('click', closeModal)
+    closeButton.addEventListener('click', closeModal)
 })

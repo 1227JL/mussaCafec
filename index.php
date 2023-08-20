@@ -1,5 +1,5 @@
 <?php
-    require_once 'config/config.php';
+    require_once 'includes/config/funciones.php';
     $inicio = true;
     incluirTemplate('header', $inicio);
 ?>
@@ -41,28 +41,31 @@
                 </div>
             </div>
         </section>
-        <section class="concursos-cards">
+        <section class="ponentes">
             <h1 class="heading">Ponentes</h1>
-            <div class="splide ponentes" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide slide-1">
-                            <div class="ponente">
-                                <h1>Ponente 1</h1>
+                            <div>
+                                <h1 class="heading">Ponente 1</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
                             </div>
+                            <img src="/build/assets/user.jpg" alt="imagen del ponente">
                         </li>
                         <li class="splide__slide slide-2">
-                            <div class="ponente">
-                                <h1>Ponente 1</h1>
+                            <div>
+                                <h1 class="heading">Ponente 1</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
                             </div>
+                            <img src="/build/assets/user.jpg" alt="imagen del ponente">
                         </li>
                         <li class="splide__slide slide-3">
-                            <div class="ponente">
-                                <h1>Ponente 1</h1>
+                            <div>
+                                <h1 class="heading">Ponente 1</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
                             </div>
+                            <img src="/build/assets/user.jpg" alt="imagen del ponente">
                         </li>
                     </ul>
                 </div>

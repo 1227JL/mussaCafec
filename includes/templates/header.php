@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +11,25 @@
 </head>
 <body>
     <header class="header <?php echo isset($inicio) && $inicio ? 'absolute' : 'relative'?>">
+        <div class="modal off" id="modal">
+            <div class="close">
+                <button id="closeButton">X</button>
+            </div>
+            <ul class="nav__link">
+                <li class="nav__item">
+                    <a href="/">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="">Evento</a>
+                </li>
+                <li class="nav__item">
+                    <a href="">Ponentes</a>
+                </li>
+                <li class="nav__item">
+                    <a href="">Registro</a>
+                </li>
+            </ul>
+        </div>
         <nav class="nav">
             <h1 class="heading">Mussa Cafec</h1>
             <ul class="nav__link">
@@ -30,6 +46,7 @@
                     <a href="">Registro</a>
                 </li>
             </ul>
+            <img id="menu" src="/build/assets/menu.svg" alt="icono menu desplegable">
         </nav>
         <?php if(isset($inicio) && $inicio): ?>
             <div class="splide" role="group" aria-label="Splide Basic HTML Example">
