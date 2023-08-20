@@ -1,8 +1,16 @@
 
 <?php
     require_once '../../includes/templates/header.php';
+    require_once '../../includes/config/utils.php';
 ?>
-
+<?php if(isset($_SESSION['registrado'] )): ?>
+<div class='message-register'>
+    <?= $_SESSION['registrado'] ; ?>
+</div>
+<?php endif; ?>
+<div class="errores-archivos">
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
+</div>
 <section class="categorias" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
@@ -13,14 +21,15 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarRobotica.php" method="POST" class="form">
+            <form action="../../includes/config/registrarRobotica.php" method="POST" class="form" id="form-robotica">
                     <div class="coolinput">
                         <label for="categoria" class="text">Categoria de participacion:</label>
                         <select name="categoria" id="categoria" class="select">
                             <option value="">Seleccione una opcion</option>
-                            <option value="Robot seguidor de linea">Robot seguidor de linea</option>
-                            <option value="Mini sumo">Mini sumo</option>
-                            <option value="Futbolero o de servicio">Futbolero o de servicio</option>
+                            <option value="Robot Seguidor de línea velocista">Robot Seguidor de línea velocista</option>
+                            <option value="Robot Batalla de mini sumo (autónomo)">Robot Batalla de mini sumo (autónomo)</option>
+                            <option value="Robot Futbolero SENA CUP">Robot Futbolero SENA CUP</option>
+                            <option value="SENABOT">SENABOT</option>
                         </select>
                     </div>
                     <div class="coolinput">
@@ -54,3 +63,5 @@
         </div>
     </div>
 </section>
+<?php BorrarErrores(); ?>
+<script src="../../src/js/form_robotica.js"></script>

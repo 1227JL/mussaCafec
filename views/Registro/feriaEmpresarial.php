@@ -1,7 +1,15 @@
 <?php
     require_once '../../includes/templates/header.php';
+    require_once '../../includes/config/utils.php';
 ?>
-
+<?php if(isset($_SESSION['registrado'] )): ?>
+<div class='message-register'>
+    <?= $_SESSION['registrado'] ; ?>
+</div>
+<?php endif; ?>
+<div class="errores-archivos">
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
+</div>
 <section class="categorias" id="FeriaEmpresarial">
     <div class="categorias_div">
         <div class="title-categorias">
@@ -12,7 +20,7 @@
             </div>
         </div>    
         <div class="formulario">
-            <form action="./config/registrarFeria.php" method="POST" id="form-feria" class="form" enctype="multipart/form-data">
+            <form action="../../includes/config/registrarFeria.php" method="POST" id="form-feria" class="form" enctype="multipart/form-data">
                     <div class="coolinput">
                         <label for="nombreInstitucionFeria" class="text">Institucion:</label>
                         <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucionFeria">
@@ -32,8 +40,9 @@
                     <div class="coolinput">
                         <input type="submit" value="Registrarme" class="button-registro">
                     </div>
-                    
             </form>
         </div>
     </div>
 </section>
+<?php BorrarErrores(); ?>
+<script src="../../src/js/form_feria.js"></script>

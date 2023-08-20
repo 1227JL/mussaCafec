@@ -74,11 +74,9 @@ function crearCampos() {
 }
 //funcion para descargar el archivo ponente
 function descargarArchivoPonente() {
-    var archivoPonencia = "./resources/FormatoPonencia.docx"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
-    // Obtén la extensión del archivo seleccionado
-    var extensionPonencia = archivoPonencia.split('.docx').pop().toLowerCase();
+    var archivoPonencia = "../../resources/formatos/formatos_ponencia.rar"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
     // Define el nombre del archivo para descarga
-    var nombreArchivoPonencia = "FormatoPonencia" + extensionPonencia;
+    var nombreArchivoPonencia = "formatos_Ponencia.rar";
     // Crea un enlace <a> temporal para la descarga
     var enlaceDescargaPonencia = document.createElement('a');
     enlaceDescargaPonencia.href = archivoPonencia;
@@ -104,7 +102,7 @@ participantesInput.addEventListener('input', () => {
         
         const labelNombre = document.createElement('label');
         labelNombre.className = 'text';
-        labelNombre.textContent = `Nombre_del_participante_${i}`;
+        labelNombre.textContent = `Nombre del participante ${i}`;
         
         const inputNombre = document.createElement('input');
         inputNombre.type = 'text';
@@ -144,9 +142,8 @@ participantesInput.addEventListener('input', () => {
 });
 //funcion para descargar el archivo poster
 function descargarArchivoPoster() {
-    var archivoPoster = "./resources/PosterEstructura.docx"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
-    var extensionPoster = archivoPoster.split('.docx').pop().toLowerCase();
-    var nombreArchivoPoster = "PosterEstructura" + extensionPoster;
+    var archivoPoster = "../../resources/formatos/formatos_poster.rar"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
+    var nombreArchivoPoster = "formatos_poster.rar";
     var enlaceDescargaPoster = document.createElement('a');
     enlaceDescargaPoster.href = archivoPoster;
     enlaceDescargaPoster.download = nombreArchivoPoster;
