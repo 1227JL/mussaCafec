@@ -53,10 +53,29 @@ main.inicio {
                 border-radius: .5rem;
             }
         }
+
+        .ponentes {
+            
+            .splide__track {
+                .splide_list {
+                    .splide__slide {
+                        div {
+                            display: flex;
+                            background-color: yellow;
+                            padding: 3rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-section:nth-of-type(even) {
-    background-color: $bg-200;
+section {
+    
     padding: 2rem;
+    &:nth-of-type(even) {
+        background-color: $bg-200;
+    }
+
 }
