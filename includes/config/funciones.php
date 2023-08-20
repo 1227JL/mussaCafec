@@ -1,10 +1,4 @@
 <?php   
-    define('TEMPLATES_URL', __DIR__.'/templates');
-    define('FUNCIONES_URL', __DIR__.'funciones.php');
-    
-    function incluirTemplate( string $nombre, bool $inicio = false ) {
-        include TEMPLATES_URL."/$nombre.php";
-    }
 
     function estaAutenticado() : void {
         session_start();
@@ -124,6 +118,12 @@
         $sql = "SELECT * FROM $tabla";
         $obtener = mysqli_query($db, $sql);
         return $obtener;
+    }
+    
+    define('TEMPLATES_URL', 'includes/templates');
+
+    function incluirTemplate( string $nombre, bool $inicio = false ) {
+        include TEMPLATES_URL."/$nombre.php";
     }
     
     function limpiar_cadena($cadena){
