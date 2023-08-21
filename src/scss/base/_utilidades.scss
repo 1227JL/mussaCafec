@@ -140,7 +140,7 @@
     color: $accent-300;
 }
 
-.field {
+.coolinput {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -182,4 +182,20 @@
 
 .heading.mt {
     margin-top:3rem;
+}
+
+button#descargar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    @include tablet {
+        margin-left: auto;
+    }
 }

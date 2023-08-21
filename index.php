@@ -4,7 +4,9 @@
     incluirTemplate('header', $inicio);
 ?>
     <main class="inicio">
-        <section class="concursos">
+        <section class="concursos contain">
+            <h1 class="heading">¡Bienvenidos al <span>VI</span> Encuentro de Semilleros de Investigación SENA Regional Casanare!</h1>
+            <p>El evento de desarrollo en dos (2) días martes 17 de octubre de 2023 y miércoles 18 de octubre de 2023 desde las 6:00 am para participantes como ponentes, posters, feria empresarial y concursantes al torneo de robótica y se abrirá al cumplido a partir de las 8:00 am. Cronograma que se usará en los mismos horarios para ambos días.</p>
             <div class="concurso contain">
                 <img src="/build/img/splide1.jpeg" alt="">
                 <div class="concurso-informacion">

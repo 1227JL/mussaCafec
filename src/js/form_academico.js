@@ -4,17 +4,21 @@ const seccionPoster = document.getElementById('poster');
 const seccionPonente = document.getElementById('ponente');
 
 // Mostrar u ocultar secciones según las categorías seleccionadas
-checkboxPoster.addEventListener('change', () => {
-    checkboxPonente.checked = false;
-    seccionPonente.style.display = 'none';
-    seccionPoster.style.display = checkboxPoster.checked ? 'block' : 'none';
-});
 
-checkboxPonente.addEventListener('change', () => {
-    checkboxPoster.checked = false;
-    seccionPoster.style.display = 'none';
-    seccionPonente.style.display = checkboxPonente.checked ? 'block' : 'none';
-});
+function showForm(){
+    if(checkboxPonente.checked == false){
+        seccionPoster.style.display = 'block';
+        seccionPonente.style.display = 'none';
+    }else{ 
+        seccionPonente.style.display = 'block' ;
+        seccionPoster.style.display = 'none';
+    }
+    
+}
+checkboxPoster.addEventListener('change', showForm)
+checkboxPonente.addEventListener('change', showForm)
+
+showForm()
 
 //Funcion para crear input dependiendo de la institucion
 function mostrar() {
