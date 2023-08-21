@@ -40,8 +40,15 @@
         <div class="formulario">
             <form action="../../includes/config/registrarPonentes.php" method="POST" class="form" id="form-ponente" enctype="multipart/form-data">
                     <div class="coolinput">
-                        <label for="eje" class="text">Eje tematico:</label>
-                        <input type="text" placeholder="..." name="ejetematico" class="input" id="eje">
+                        <label for="ejetematico" class="text">Eje tematico:</label>
+                        <select id="ejetematico" class="select" onchange="mostrar()" name="ejetematico">
+                            <option value="">Seleccione una opcion</option>
+                            <option value="Empresarial">Empresarial</option>
+                            <option value="Agroindustrial">Agroindustrial</option>
+                            <option value="Energías renovables">Energías renovables</option>
+                            <option value="Protección al medio ambiente">Protección al medio ambiente</option>
+                            <option value="Arquitectura y Construcciones Sostenibles">Arquitectura y Construcciones Sostenibles</option>
+                        </select>
                     </div>
                     <div class="coolinput">
                         <label for="Institucion" class="text">Institución de participación:</label>
@@ -100,7 +107,7 @@
                             <span class="form-title">Los documentos debe ir nombrados por el titulo del proyecto.</span>
                         <label for="file-input" class="drop-container">
                             <span class="drop-title">Selecciona tus archivos PDF o Power Point aqui.</span>
-                            <input type="file" name="archivo_1" accept=".pdf" id="file-input">
+                            <input type="file" name="archivo_1" accept=".pdf,.pptx" id="file-input">
                             <span class="drop-title">Selecciona tus archivos Word aqui.</span>
                             <input type="file" name="archivo_2" accept=".docx" id="file-input">
                         </label>

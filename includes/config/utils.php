@@ -13,6 +13,9 @@ function BorrarErrores(){
     if(isset($_SESSION['delete'])){
         $_SESSION['delete']=null;
     }
+    if(isset($_SESSION['editado'])){
+        $_SESSION['editado']=null;
+    }
 }
 
 function mostrarAlerta($errores,$parametro){
@@ -27,8 +30,8 @@ function mostrarAlerta($errores,$parametro){
     return $alerta;
 }
 
-function obtenerTotal($conexion,$tabla,$campo){
-    $sql = "SELECT COUNT($campo) FROM $tabla";
+function obtenerTotal($conexion,$tabla){
+    $sql = "SELECT COUNT(id) FROM $tabla;";
         
         $totalResultado = mysqli_query($conexion, $sql);
         $total = mysqli_fetch_array($totalResultado);
@@ -44,4 +47,6 @@ function obtenerDatos($db,$tabla,$id){
     $obtener = mysqli_query($db, $sql);
     return $obtener;
 }
+
+
 ?>

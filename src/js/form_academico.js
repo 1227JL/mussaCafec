@@ -24,15 +24,25 @@ function mostrar() {
     var divExterna = document.querySelector(".mostrar-input-externa");
     var divSena = document.querySelector(".mostrar-input-sena");
 
+    var inputExterna = divExterna.querySelector('input[type="text"]');
+    var inputSenaTitulada = divSena.querySelector('input[name="titulada"]');
+    var inputSenaFicha = divSena.querySelector('input[name="ficha"]');
+
     if (selectedOption === "Externa") {
         divExterna.style.display = "block";
         divSena.style.display = "none";
+        inputSenaTitulada.value = ''; // Borra el valor de titulada
+        inputSenaFicha.value = ''; // Borra el valor de ficha
     } else if (selectedOption === "SENA") {
         divExterna.style.display = "none";
         divSena.style.display = "block";
+        inputExterna.value = ''; // Borra el valor de externa
     } else {
         divExterna.style.display = "none";
         divSena.style.display = "none";
+        inputExterna.value = ''; 
+        inputSenaTitulada.value = ''; 
+        inputSenaFicha.value = ''; 
     }
 }
 mostrar();

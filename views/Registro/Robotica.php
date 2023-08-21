@@ -37,9 +37,6 @@
                         <input type="text" placeholder="Nombre de la Institucion" name="InstitucionRobotica" class="input" id="InstitucionRobotica">
                     </div>
                     <div class="coolinput">
-                        <span class="form-title">Nombre completo del participantes o participantes (máx. 2 por categoría)</span>
-                    </div>
-                    <div class="coolinput">
                         <label for="tituloR" class="text">Titulo de proyecto:</label>
                         <input type="text" placeholder="..." class="input" id="tituloR" name="tituloR">
                     </div>
@@ -53,7 +50,7 @@
                     </div>
                     <div class="coolinput">
                         <label for="confirmacion" class="text">Los participantes solo deben estar registrados en un solo proyecto:</label>
-                        <input type="checkbox" placeholder="Define un contacto..." name="confirmacion" class="input" id="confirmacion">
+                        <input type="checkbox"  name="confirmacion" class="input" id="confirmacion">
                     </div>
                     <div class="coolinput">
                         <input type="submit" value="Registrarme" class="button-registro">

@@ -12,7 +12,6 @@ $titulada = isset($_POST['titulada']) ? limpiar_cadena($_POST['titulada']) : nul
 $externa = isset($_POST['externa']) ? limpiar_cadena($_POST['externa']) : null ;
 $titulo = limpiar_cadena($_POST['titulo']);
 $tipoProyecto = limpiar_cadena($_POST['tipoProyecto']);
-$numeroPonentes = limpiar_cadena($_POST['numeroPonentes']);
 $nombre_1 = limpiar_cadena($_POST['nombre1']);
 $correo_1 = limpiar_cadena($_POST['correo1']);
 $contacto_1 = limpiar_cadena($_POST['contacto1']);

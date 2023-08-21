@@ -3,7 +3,37 @@
     require_once '../../includes/config/utils.php';
     require_once '../../includes/config/database.php';
     $db = conectarDB();
+    
+    $totalPonentes = obtenerTotal($db,'ponentes');
+    $totalPoster = obtenerTotal($db,'poster');
+    $totalFeria = obtenerTotal($db,'feria_empresarial');
+    $totalRobotica = obtenerTotal($db,'robotica');
 ?>
+<div class="">
+    <nav>
+        <a href="Ponentes.php"><?=$totalPonentes;?> Registros ponentes</a>
+        <a href="poster.php"><?=$totalPoster;?> Registros poster</a>
+        <a href="feria.php"><?=$totalFeria;?> Registros feria Empresarial</a>
+        <a href="Robotica.php"><?=$totalRobotica;?> Registros Robotica</a>
+    </nav>
+</div>
+<?php if(isset($_SESSION['editado'] )): ?>
+<div class='message-edit'>
+    <?= $_SESSION['editado'] ; ?>
+</div>
+<?php endif; ?>
+<?php if(isset($_SESSION['delete'] )): ?>
+<div class='message-delete'>
+    <?= $_SESSION['delete'] ; ?>
+</div>
+<?php endif; ?>
+
+<div class="errores-archivos">
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'tamaño'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-docx'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-pdf'):"" ?>
+    <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
+</div>
 <section id="ponencia">
 <?php if(isset($_GET['edit_id'])):
     $id = $_GET['edit_id'];
@@ -14,8 +44,15 @@
 <form action="../../includes/config/editarPonentes.php" method="POST" class="form" id="form-ponente" enctype="multipart/form-data">
     <input type="hidden" name="id_proyecto" value="<?= $datos['id']?>">
     <div class="coolinput">
-        <label for="eje" class="text">Eje tematico:</label>
-        <input type="text" name="ejetematico" class="input" id="eje" value="<?= $datos['eje_tematico']?>">
+        <label for="ejetematico" class="text">Eje tematico:</label>
+        <select id="ejetematico" class="select" onchange="mostrar()" name="ejetematico">
+            <option value="">Seleccione una opcion</option>
+            <option value="Empresarial" <?= $datos['eje_tematico'] == 'Empresarial' ? 'selected' : ''; ?>>Empresarial</option>
+            <option value="Agroindustrial" <?= $datos['eje_tematico'] == 'Agroindustrial' ? 'selected' : ''; ?>>Agroindustrial</option>
+            <option value="Energías renovables" <?= $datos['eje_tematico'] == 'Energías renovables' ? 'selected' : ''; ?>>Energías renovables</option>
+            <option value="Protección al medio ambiente" <?= $datos['eje_tematico'] == 'Protección al medio ambiente' ? 'selected' : ''; ?>>Protección al medio ambiente</option>
+            <option value="Arquitectura y Construcciones Sostenibles" <?= $datos['eje_tematico'] == 'Arquitectura y Construcciones Sostenibles' ? 'selected' : ''; ?>>Arquitectura y Construcciones Sostenibles</option>
+        </select>
     </div>
     <div class="coolinput">
         <label for="Institucion" class="text">Institución de participación:</label>
@@ -95,11 +132,12 @@
         </select>
     </div>
     <div class="coolinput">
+        <span class="drop-title">Si desea editar un archivo subelo en el campo correspodiente.</span>
+    </div>
+    <div class="coolinput">
         <label for="file-input" class="drop-container">
-            <span class="drop-title">Este es tu archivo actualemente. <?= $datos['archivo_2']?> </span>
             <span class="drop-title">Selecciona tus archivos PDF o Power Point aqui.</span>
             <input type="file" name="archivo_1" accept=".pdf" id="file-input">
-
             <span class="drop-title">Selecciona tus archivos Word aqui.</span>
             <input type="file" name="archivo_2" accept=".docx" id="file-input">
         </label>
@@ -204,17 +242,17 @@
                     <?php endif; ?>
                     <div class="datos">
                         <h3>Archivo para expocision</h3>
-                        <a href="./resources/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
+                        <a href="../../uploads/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
                     </div>
                     <div class="datos">
                         <h3>archivo de informacion</h3>
-                        <a href="./resources/ponentes/<?= $datos['archivo_2']?>" download><?= $datos['archivo_2']?></a>
+                        <a href="../../uploads/ponentes/<?= $datos['archivo_2']?>" download><?= $datos['archivo_2']?></a>
                     </div>
                     <div class="datos">
-                        <a href="./config/borrarPonente.php?id=<?=$datos['id']?>" class="delete">Eliminar registro</a>
+                        <a href="../../includes/config/borrarPonente.php?delete_id=<?=$datos['id']?>" class="delete">Eliminar registro</a>
                     </div>
                     <div class="datos">
-                        <a href="panelAdmin.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>
+                        <a href="Ponentes.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>
                     </div>
                 </div>
                 <br>
@@ -228,4 +266,5 @@
     </div>
 <?php endif; ?>
 </section>
+<?php BorrarErrores(); ?>
 <script src="../../src/js/buscadorPonentes.js"></script>

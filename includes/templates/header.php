@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="/src/js/app.js"></script>
-    <script src="./src/js/jquery-3.2.1.js"></script>
-    <script src="./src/js/jquery_validate.js"></script>
+    <script src="../../src/js/jquery-3.2.1.js"></script>
+    <script src="../../src/js/jquery_validate.js"></script>
 </head>
 <body>
     <header class="header <?php echo isset($inicio) && $inicio ? 'absolute' : 'relative'?>">
