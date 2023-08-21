@@ -8,6 +8,7 @@
     <?= $_SESSION['registrado'] ; ?>
 </div>
 <?php endif; ?>
+<main class="formularios">
 <div class="errores-archivos">
     <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
 </div>
@@ -59,6 +60,6 @@
             </form>
         </div>
     </div>
-</section>
+</main>
 <?php BorrarErrores(); ?>
 <script src="../../src/js/form_robotica.js"></script>

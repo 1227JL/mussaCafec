@@ -4,14 +4,15 @@ main.inicio {
     .concursos {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
+        gap: 3rem;
         padding: 1rem;
+
+
         
         .concurso {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             align-items: center;
-            
             .concurso-informacion{
                 h1 {
                     text-align: left;
@@ -112,14 +113,16 @@ main.inicio {
             }
         }
     }
+
+    section {
+        &:nth-of-type(even) {
+            background-color: $bg-200;
+        }
+    
+        @include tablet {
+            padding: 2rem;
+        }
+    }
 }
 
-section {
-    &:nth-of-type(even) {
-        background-color: $bg-200;
-    }
 
-    @include tablet {
-        padding: 2rem;
-    }
-}
