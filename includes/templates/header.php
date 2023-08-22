@@ -31,6 +31,9 @@
                 <li class="nav__item">
                     <a href="">Registro</a>
                 </li>
+                <li class="nav__item">
+                    <a href="/views/admin/Robotica.php">Administrador</a>
+                </li>
             </ul>
         </div>
         <nav class="nav">
@@ -47,6 +50,9 @@
                 </li>
                 <li class="nav__item">
                     <a href="">Registro</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/views/admin/Robotica.php">Administrador</a>
                 </li>
             </ul>
             <img id="menu" src="/build/assets/menu.svg" alt="icono menu desplegable">

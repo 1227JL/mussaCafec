@@ -4,25 +4,27 @@
     require_once '../../includes/config/utils.php';
 ?>
 <?php if(isset($_SESSION['registrado'] )): ?>
-<div class='message-register'>
+<div class='alert-success'>
     <?= $_SESSION['registrado'] ; ?>
 </div>
 <?php endif; ?>
 <main class="formularios">
-<div class="errores-archivos">
+<div class="alert-error">
     <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
 </div>
 <section class="categorias" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
-            <h1>Categoria:Robotica</h1>
+            <h1 class="heading">Robotica</h1>
             <div class="descargar-formato">
                 <p>Recuerda descargar el formato necesario para esta actividad</p>
-                <button id="descargar" onclick="descargarArchivoRobotica()">Descargar <img class="icon-descarga" src="./img/downloads.png" alt=""></button>
+                <button class="boton-amarillo-block" id="descargar" onclick="descargarArchivoRobotica()">Descargar <img class="icon-descarga" src="/build/assets/download.png" alt=""></button>
             </div>
         </div>    
         <div class="formulario">
             <form action="../../includes/config/registrarRobotica.php" method="POST" class="form" id="form-robotica">
+                <fieldset>
+                    <legend>Información de Participación</legend>
                     <div class="coolinput">
                         <label for="categoria" class="text">Categoria de participacion:</label>
                         <select name="categoria" id="categoria" class="select">
@@ -49,14 +51,11 @@
                         <label for="contacto" class="text">Contacto:</label>
                         <input type="text" placeholder="Define un contacto..." name="contacto" class="input" id="contacto">
                     </div>
-                    <div class="coolinput">
-                        <label for="confirmacion" class="text">Los participantes solo deben estar registrados en un solo proyecto:</label>
+                    <div class="coolinput terminos">
                         <input type="checkbox"  name="confirmacion" class="input" id="confirmacion">
                     </div>
-                    <div class="coolinput">
-                        <input type="submit" value="Registrarme" class="button-registro">
-                    </div>
-                    
+                </fieldset>
+                <input class="boton-verde-block" type="submit" value="Registrarme" class="button-registro">
             </form>
         </div>
     </div>
