@@ -311,8 +311,6 @@ $(document).ready(function(){
 
     });
 
-
-
     $("#form-poster").validate({
 
         rules:{

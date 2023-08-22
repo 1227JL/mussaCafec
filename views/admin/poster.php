@@ -1,6 +1,7 @@
 <?php
-    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
+    estaAutenticado();
+    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/database.php';
     $db = conectarDB();
     

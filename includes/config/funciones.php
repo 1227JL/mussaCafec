@@ -1,21 +1,5 @@
 <?php   
 
-    function estaAutenticado() : void {
-        session_start();
-
-        if(!$_SESSION['login']){
-            header('Location: /admin/ingreso.php');
-        }
-    }
-
-    function debugear($variable){
-        echo '<pre>';
-        var_dump($variable);
-        echo '</pre>';
-
-        exit;
-    }
-
     function getCurrentURL(){
         $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
         $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
