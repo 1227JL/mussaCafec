@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +23,20 @@
                     <a href="/">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">Evento</a>
+                    <a href="./views/registro/poster-ponentes.php">Registro</a>
+                </li>
+                <?php if(isset($_SESSION['login']) && $_SESSION['login']): ?>
+                <li class="nav__item">
+                    <a href="/views/admin/Ponentes.php">Reportes</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">Ponentes</a>
+                    <a href="../../includes/config/logout.php">Cerrar sesion</a>
                 </li>
+                <?php else: ?>
                 <li class="nav__item">
-                    <a href="">Registro</a>
+                    <a href="/views/admin/index.php">Administrador</a>
                 </li>
-                <li class="nav__item">
-                    <a href="/views/admin/Robotica.php">Administrador</a>
-                </li>
+                <?php endif; ?>
             </ul>
         </div>
         <nav class="nav">
@@ -42,17 +46,20 @@
                     <a href="/">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">Evento</a>
+                    <a href="/views/registro/poster-ponentes.php">Registro</a>
+                </li>
+                <?php if(isset($_SESSION['login']) && $_SESSION['login']): ?>
+                <li class="nav__item">
+                    <a href="/views/admin/Ponentes.php">Reportes</a>
                 </li>
                 <li class="nav__item">
-                    <a href="">Ponentes</a>
+                    <a href="../../includes/config/logout.php">Cerrar sesion</a>
                 </li>
+                <?php else: ?>
                 <li class="nav__item">
-                    <a href="">Registro</a>
+                    <a href="/views/admin/index.php">Administrador</a>
                 </li>
-                <li class="nav__item">
-                    <a href="/views/admin/Robotica.php">Administrador</a>
-                </li>
+                <?php endif; ?>
             </ul>
             <img id="menu" src="/build/assets/menu.svg" alt="icono menu desplegable">
         </nav>

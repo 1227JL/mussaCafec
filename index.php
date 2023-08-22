@@ -11,21 +11,21 @@
                 <img src="/build/img/academico1.jpg" alt="">
                 <div class="concurso-informacion">
                     <h1 class="heading">Academico</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
+                    <p>¡Es hora de brillar en el escenario del conocimiento en el SENA Casanare! Te animamos a inscribirte en una de nuestras dos emocionantes categorías: ¡como ponente con tus ideas innovadoras o presentando un poster impactante! No pierdas la oportunidad de compartir y aprender. ¡Inscríbete ahora y sé parte de este evento excepcional!</p>
                 </div>
             </div>
             <div class="concurso contain">
                 <img src="/build/img/robotica1.jpg" alt="">
                 <div class="concurso-informacion">
                     <h1 class="heading">Torneo de Robótica</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
+                    <p>¡Prepárate para un desafío emocionante en el mundo de la robótica! El SENA Casanare te invita a inscribirte en nuestro Concurso de Robótica, donde podrás demostrar tus habilidades y creatividad. Tenemos varias categorías esperándote, desde la competencia de robots autónomos hasta el diseño de soluciones robóticas innovadoras. ¡No pierdas la oportunidad de participar! Inscríbete ahora y sé parte de esta emocionante aventura tecnológica. ¡Tu ingenio nos sorprenderá!</p>
                 </div>
             </div>
             <div class="concurso contain">
                 <img src="/build/img/feria1.jpg" alt="">
                 <div class="concurso-informacion">
                     <h1 class="heading">Feria Empresarial</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
+                    <p>¡Prepárate para un evento increíble con el SENA Casanare! Te invitamos a ser parte de nuestra Feria Empresarial, donde la innovación y los negocios se fusionan en un espacio único. Explora una amplia gama de stands que ofrecen productos innovadores y servicios vanguardistas, mientras te sumerges en charlas inspiradoras con líderes de la industria. Ya seas emprendedor, empresario o simplemente apasionado por el mundo empresarial, esta es tu oportunidad para conectarte, aprender y crecer. Regístrate ahora para asegurar tu lugar en esta emocionante feria que promete ser una experiencia enriquecedora llena de oportunidades de networking y conocimientos clave. ¡No te lo pierdas!</p>
                 </div>
             </div>
         </section>
@@ -82,21 +82,9 @@
     </main>
     <footer class="footer">
         <nav class="nav nav--footer">
-            <ul class="nav__link nav__link--footer">
-                <li class="nav__item">
-                    <a href="#">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Evento</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Ponentes</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">Registro</a>
-                </li>
-            </ul>
+            <p>@SENA comunica</p>
         </nav>
+        
         <div class="footer__social">
             <a href="#" class="footer__icons"><img src="/build/assets/redes/facebook.png" class="footer__img"></a>
             <a href="#" class="footer__icons"><img src="/build/assets/redes/instagram.png" class="footer__img"></a>

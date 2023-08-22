@@ -1,7 +1,7 @@
 <?php
+    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
     estaAutenticado();
-    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/database.php';
     $db = conectarDB();
     
@@ -169,7 +169,6 @@
                         <h3>Contacto ponente 3</h3>
                         <p><?= $datos['contacto_3']?></p>
                     </div>
-                    <?php endif; ?>
                     <div class="datos">
                         <h3>Archivo para expocision</h3>
                         <a href="../../uploads/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
@@ -278,7 +277,7 @@
                     </div>
                 <?php endwhile; ?>  
             </div>
-        <?php else: //si no se encontraron datos en la busqueda ?>
+        <?php else:  ?>
             <div class="sin-registros">
                 <h3>Lo sentimos!</h3>
                 <p>En el momento no hay ninguna ponencia registrada</p>

@@ -1,5 +1,4 @@
 <?php 
-session_start();
 
 function estaAutenticado() : void {
     if(!$_SESSION['login']){
