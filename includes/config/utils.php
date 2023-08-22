@@ -1,15 +1,12 @@
 <?php 
 //FUNCIONES DEFINIDOS
 function BorrarErrores(){
-
     if(isset($_SESSION['errores'])){
         $_SESSION['errores']=null;
     }
-
     if(isset($_SESSION['registrado'])){
         $_SESSION['registrado']=null;
-    }
-    
+    } 
     if(isset($_SESSION['delete'])){
         $_SESSION['delete']=null;
     }
@@ -32,7 +29,6 @@ function mostrarAlerta($errores,$parametro){
 
 function obtenerTotal($conexion,$tabla){
     $sql = "SELECT COUNT(id) FROM $tabla;";
-        
         $totalResultado = mysqli_query($conexion, $sql);
         $total = mysqli_fetch_array($totalResultado);
         $total = (int) $total[0];
@@ -48,5 +44,10 @@ function obtenerDatos($db,$tabla,$id){
     return $obtener;
 }
 
+function estaAutenticado() : void {
+    if(!$_SESSION['login']){
+        header('Location:index.php');
+    }
+}
 
 ?>

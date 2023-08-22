@@ -1,6 +1,7 @@
 <?php
-    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
+    estaAutenticado();
+    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/database.php';
     $db = conectarDB();
     
@@ -59,7 +60,7 @@
         </div>
     </form>
 <?php else: ?>
-    <h1>Este proyecto no existe</h1>
+    <h1>Este proyecto no existe!</h1>
 <?php endif; ?>
 <?php endif; ?>
 <?php $resultadoFeria = obtenerDatos($db,'feria_empresarial',null);
