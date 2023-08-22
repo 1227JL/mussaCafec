@@ -1,7 +1,7 @@
 <?php
+    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
     estaAutenticado();
-    require_once '../../includes/templates/header.php';
     require_once '../../includes/config/database.php';
     $db = conectarDB();
     
@@ -161,9 +161,27 @@
                         <input type="checkbox" id="filtroSena" name="filtroTipo" value="SENA" class="check">
                         <label for="filtroSena">SENA</label>
                     </div>
-                    <div class="institucion">
-                        <input type="checkbox" id="filtroExterna" name="filtroTipo" value="Externa" class="check">
-                        <label for="filtroExterna">Externa</label>
+                    <div class="datos">
+                        <h3>Email ponente 3</h3>
+                        <p><?= $datos['correo_3']?></p>
+                    </div>
+                    <div class="datos">
+                        <h3>Contacto ponente 3</h3>
+                        <p><?= $datos['contacto_3']?></p>
+                    </div>
+                    <div class="datos">
+                        <h3>Archivo para expocision</h3>
+                        <a href="../../uploads/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
+                    </div>
+                    <div class="datos">
+                        <h3>archivo de informacion</h3>
+                        <a href="../../uploads/ponentes/<?= $datos['archivo_2']?>" download><?= $datos['archivo_2']?></a>
+                    </div>
+                    <div class="datos">
+                        <a onclick="confirmar(<?=$datos['id'];?>)" class="delete">Eliminar registro</a>
+                    </div>
+                    <div class="datos">
+                        <a href="Ponentes.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>
                     </div>
                 </div>
                 <div class="coolinput">
@@ -259,7 +277,7 @@
                     </div>
                 <?php endwhile; ?>  
             </div>
-        <?php else: //si no se encontraron datos en la busqueda ?>
+        <?php else:  ?>
             <div class="sin-registros">
                 <h3>Lo sentimos!</h3>
                 <p>En el momento no hay ninguna ponencia registrada</p>
