@@ -1,4 +1,11 @@
 <?php 
+session_start();
+
+function estaAutenticado() : void {
+    if(!$_SESSION['login']){
+        header('Location:index.php');
+    }
+}
 //FUNCIONES DEFINIDOS
 function BorrarErrores(){
     if(isset($_SESSION['errores'])){
@@ -13,6 +20,9 @@ function BorrarErrores(){
     if(isset($_SESSION['editado'])){
         $_SESSION['editado']=null;
     }
+    if(isset($_SESSION['error-login'])){
+        $_SESSION['error-login']=null;
+    }
 }
 
 function mostrarAlerta($errores,$parametro){
@@ -26,7 +36,6 @@ function mostrarAlerta($errores,$parametro){
     }
     return $alerta;
 }
-
 function obtenerTotal($conexion,$tabla){
     $sql = "SELECT COUNT(id) FROM $tabla;";
         $totalResultado = mysqli_query($conexion, $sql);
@@ -43,11 +52,4 @@ function obtenerDatos($db,$tabla,$id){
     $obtener = mysqli_query($db, $sql);
     return $obtener;
 }
-
-function estaAutenticado() : void {
-    if(!$_SESSION['login']){
-        header('Location:index.php');
-    }
-}
-
 ?>

@@ -86,10 +86,10 @@
                 </div>
                 <div class="datos">
                     <h3>Titulo de proyecto</h3>
-                    <p id="titulo_feria"><?= $datosFeria['titulo_proyecto']?></p>
+                    <p id="titulo_feria"><?= $datosFeria['titulo_proyecto'];?></p>
                 </div>
                 <div class="datos">
-                    <a href="../../includes/config/borrarferia.php?delete_id=<?=$datosFeria['id']?>" class="delete">Eliminar registro</a>
+                    <a onclick="confirmar(<?=$datosFeria['id'];?>)" class="delete">Eliminar registro</a>
                 </div>
                 <div class="datos">
                     <a href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>

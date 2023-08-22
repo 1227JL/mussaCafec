@@ -134,7 +134,7 @@
                     <p ><?= $datosR['confirmacion']?></p>
                 </div>
                 <div class="datos">
-                    <a href="../../includes/config/borrarRobotica.php?delete_id=<?=$datosR['id']?>" class="delete">Eliminar registro</a>
+                    <a onclick="confirmar(<?=$datosR['id']?>)" class="delete">Eliminar registro</a>
                 </div>
                 <div class="datos">
                     <a href="Robotica.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>

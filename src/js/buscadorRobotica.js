@@ -38,3 +38,13 @@ buscadorInput.addEventListener('input', actualizarFiltros);
 
 // Mostrar todos los resultados al cargar la página
 actualizarFiltros();
+
+//Pregunta para eliminar el registro
+function confirmar(id) {
+    let eliminar = window.confirm("Estas seguro de borrar este proyecto!")
+
+    if(eliminar){
+        window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`;
+    }
+
+}

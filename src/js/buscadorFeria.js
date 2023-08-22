@@ -15,3 +15,12 @@ inputFeria.addEventListener('input', function() {
         }
     });
 });
+
+function confirmar(id) {
+    let eliminar = window.confirm("Estas seguro de borrar este proyecto!")
+
+    if(eliminar){
+        window.location.href = `../../includes/config/borrarferia.php?delete_id=${id}`;
+    }
+
+}

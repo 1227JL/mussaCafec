@@ -21,7 +21,9 @@ $(document).ready(function(){
             },
             participantes:{
                 required: true,
-                number:true
+                number:true,
+                min:1,
+                max:10
             },
             tituloProyecto:{
                 required: true,
@@ -33,7 +35,8 @@ $(document).ready(function(){
             },
             participantes:{
                 required: "Ingresa el numero de participantes",
-                number:"Este es un campo numerico"
+                number:"Este es un campo numerico",
+                max:"Maximo 10 participantes"
             },
             tituloProyecto:{
                 required:"Este campo es requerido"

@@ -5,26 +5,26 @@
 ?>
     <main class="inicio">
         <section class="concursos contain">
-            <h1 class="heading">¡Bienvenidos al <span>VI</span> Encuentro de Semilleros de Investigación SENA Regional Casanare!</h1>
-            <p>El evento de desarrollo en dos (2) días martes 17 de octubre de 2023 y miércoles 18 de octubre de 2023 desde las 6:00 am para participantes como ponentes, posters, feria empresarial y concursantes al torneo de robótica y se abrirá al cumplido a partir de las 8:00 am. Cronograma que se usará en los mismos horarios para ambos días.</p>
+            <h1 class="heading">¡Bienvenidos al VI Encuentro de Semilleros de Investigación SENA Regional Casanare!</h1>
+            <p>El VI Encuentro Regional de Semillero de Investigación de la Orinoquia, organizado por Sena regional Casanare, busca fomentar la investigación, innovación y desarrollo tecnológico entre aprendices e instructores al divulgar y reconocer el trabajo de semilleros y grupos de investigación en la región. El evento se propone como un espacio para que empresarios, aprendices, instructores y emprendedores aborden soluciones a situaciones reales en la región Orinoquia. Este encuentro busca generar soluciones prácticas y reales para diversas áreas diarias de empresarios, agricultores y ganaderos de Casanare, impulsando la creación de nuevo conocimiento aplicado con el apoyo de SENNOVA. El evento se llevará a cabo los días <span>17 y 18 de octubre de 2023</span> e incluirá ponencias, pósters, feria empresarial y un torneo de robótica.</p>
             <div class="concurso contain">
-                <img src="/build/img/splide1.jpeg" alt="">
+                <img src="/build/img/academico1.jpg" alt="">
                 <div class="concurso-informacion">
-                    <h1 class="heading">Ponentes</h1>
+                    <h1 class="heading">Academico</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
                 </div>
             </div>
             <div class="concurso contain">
-                <img src="/build/img/splide1.jpeg" alt="">
+                <img src="/build/img/robotica1.jpg" alt="">
                 <div class="concurso-informacion">
                     <h1 class="heading">Torneo de Robótica</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
                 </div>
             </div>
             <div class="concurso contain">
-                <img src="/build/img/splide1.jpeg" alt="">
+                <img src="/build/img/feria1.jpg" alt="">
                 <div class="concurso-informacion">
-                    <h1 class="heading">Ponentes</h1>
+                    <h1 class="heading">Feria Empresarial</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam quas dolorem excepturi explicabo! Facere eligendi, cumque hic commodi ratione vel illo tenetur, explicabo itaque vitae doloremque. Corporis, veritatis quisquam.</p>
                 </div>
             </div>
@@ -34,15 +34,18 @@
             <div class="cards">
                 <div class="card">
                     <h1>Academico</h1>
-                    <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
+                    <img src="/build/img/academico2.jpg" alt="Img academico">
+                    <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a>
                 </div>
                 <div class="card">
                     <h1>Feria Empresarial</h1>
-                    <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
+                    <img src="/build/img/feria2.jpg" alt="Img Feria">
+                    <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a>
                 </div>
                 <div class="card">
                     <h1>Torneo de Robótica</h1>
-                    <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a href="/views/Registro/poster-ponentes.php">
+                    <img src="/build/img/robotica2.jpg" alt="Img Robotica">
+                    <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a>
                 </div>
             </div>
         </section>

@@ -250,7 +250,7 @@
                         <a href="../../uploads/ponentes/<?= $datos['archivo_2']?>" download><?= $datos['archivo_2']?></a>
                     </div>
                     <div class="datos">
-                        <a href="../../includes/config/borrarPonente.php?delete_id=<?=$datos['id']?>" class="delete">Eliminar registro</a>
+                        <a onclick="confirmar(<?=$datos['id'];?>)" class="delete">Eliminar registro</a>
                     </div>
                     <div class="datos">
                         <a href="Ponentes.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>

@@ -16,16 +16,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_execute($stmt);
     $resultado = mysqli_stmt_get_result($stmt);
 
-    if ($datos = mysqli_fetch_assoc($resultado)) {
+    if ($resultado && mysqli_num_rows($resultado)==1) {
+
         $_SESSION['login'] = true;
+        mysqli_close($db);
+        header('Location: ../../views/admin/Ponentes.php');
+        exit();
     } else {
         $_SESSION['error-login'] = "
-            <p>El usuario o la contraseña son incorrectos!</p>
+        <p>El usuario o la contraseña son incorrectos!</p>
         ";
-        header('Location:index.php?vista=login');
+        mysqli_close($db);
+        header('Location: ../../views/admin/index.php');
+        exit();
     }
-}
-mysqli_close($db);
-header('Location: ../../views/admin/Ponentes.php');
 
+}
 ?>

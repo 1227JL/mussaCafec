@@ -15,3 +15,13 @@ input.addEventListener('input', function() {
         }
     });
 });
+
+//Pregunta para eliminar el registro
+function confirmar(id) {
+    let eliminar = window.confirm("Estas seguro de borrar este proyecto!")
+
+    if(eliminar){
+        window.location.href = `../../includes/config/borrarPoster.php?delete_id=${id}`;
+    }
+
+}

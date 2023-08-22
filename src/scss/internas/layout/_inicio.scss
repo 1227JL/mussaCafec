@@ -7,7 +7,12 @@ main.inicio {
         gap: 3rem;
         padding: 1rem;
 
-
+        p{
+            text-align: justify;
+        }
+        span{
+            color: $accent-200;
+        }
         
         .concurso {
             display: grid;

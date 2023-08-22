@@ -176,7 +176,7 @@
                         <a href="../../uploads/poster/<?= $datosPoster['archivo']?>" download><?= $datosPoster['archivo']?></a>
                     </div>
                     <div class="datos">
-                        <a href="../../includes/config/borrarPoster.php?delete_id=<?=$datosPoster['id']?>" class="delete">Eliminar registro</a>
+                        <a onclick="confirmar(<?=$datosPoster['id'];?>)" class="delete">Eliminar registro</a>
                     </div>
                     <div class="datos">
                         <a href="poster.php?edit_id=<?=$datosPoster['id']?>"  class="edit">Editar registro</a>
