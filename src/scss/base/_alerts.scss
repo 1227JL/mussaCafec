@@ -1,7 +1,21 @@
 .alert-error {
     @include alert($accent-200, $bg-100);
+    padding: 0;
+
+    h1 {
+        font-weight: $bold;
+        margin: 0;
+    }
+    p {
+        color: $bg-100;
+        margin-bottom: 1rem;
+    }
 }
 
 .alert-success {
     @include alert($primary-100, $bg-100);
+
+    p {
+        color: $bg-100;
+    }
 }

@@ -9,9 +9,13 @@ function showForm(){
     if(checkboxPonente.checked == false){
         seccionPoster.style.display = 'block';
         seccionPonente.style.display = 'none';
+        checkboxPoster.classList.add('active')
+        checkboxPonente.classList.remove('active')
     }else{ 
         seccionPonente.style.display = 'block' ;
         seccionPoster.style.display = 'none';
+        checkboxPoster.classList.remove('active')
+        checkboxPonente.classList.add('active')
     }
     
 }
@@ -61,6 +65,10 @@ function crearCampos() {
     for (var i = 1; i <= numPonentes; i++) {
         var divPonente = document.createElement("div");
         divPonente.className = "div-ponente";
+
+        var labelPonente = document.createElement('label')
+        labelPonente.textContent = 'Informacion de contacto Ponente ' + i;
+        divPonente.appendChild(labelPonente);
 
         var nombreInput = document.createElement("input");
         nombreInput.type = "text";
