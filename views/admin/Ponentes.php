@@ -171,7 +171,6 @@
                     <input type="text" id="busquedaInput" placeholder="Buscar por Título" class="input">
                 </div>
             </div>
-            
             <div class="resultados">
                 <?php 
                 while($datos = mysqli_fetch_array($resultado)):  ?>

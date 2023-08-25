@@ -5,40 +5,9 @@
     gap: 2rem;
     padding: 4rem;
     background-color: $primary-100;
-    
-    .nav--footer {
-        position: relative;
-        margin: 0;
-        
-        .nav__link--footer {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin: 0;
 
-            .nav__item {
-                width: 100%;
-                a {
-                    display: block;
-                    padding: 1rem;
-                    text-align: center;
-
-                    @include tablet {
-                        display: inline;
-                    }
-                }
-
-                @include tablet {
-                    width: auto;
-                }
-            }
-    
-            @include tablet {
-                flex-direction: row;
-                gap: 2rem;
-                margin: 0;
-            }
-        }
+    p {
+        color: $bg-100;
     }
 
     .footer__social {
@@ -46,8 +15,9 @@
         justify-content: center;
         gap: 2rem;
     }
-
+    
     @include tablet {
         flex-direction: row;
+        justify-content: space-between;
     }
 }

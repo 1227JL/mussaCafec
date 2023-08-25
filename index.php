@@ -12,6 +12,9 @@
                 <div class="concurso-informacion">
                     <h1 class="heading">Academico</h1>
                     <p>¡Es hora de brillar en el escenario del conocimiento en el SENA Casanare! Te animamos a inscribirte en una de nuestras dos emocionantes categorías: ¡como ponente con tus ideas innovadoras o presentando un poster impactante! No pierdas la oportunidad de compartir y aprender. ¡Inscríbete ahora y sé parte de este evento excepcional!</p>
+                    <a href="">Términos y condiciones
+                        <img src="/build/assets/arrow-right.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="concurso contain">
@@ -19,6 +22,9 @@
                 <div class="concurso-informacion">
                     <h1 class="heading">Torneo de Robótica</h1>
                     <p>¡Prepárate para un desafío emocionante en el mundo de la robótica! El SENA Casanare te invita a inscribirte en nuestro Concurso de Robótica, donde podrás demostrar tus habilidades y creatividad. Tenemos varias categorías esperándote, desde la competencia de robots autónomos hasta el diseño de soluciones robóticas innovadoras. ¡No pierdas la oportunidad de participar! Inscríbete ahora y sé parte de esta emocionante aventura tecnológica. ¡Tu ingenio nos sorprenderá!</p>
+                    <a href="">Términos y condiciones
+                        <img src="/build/assets/arrow-right.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="concurso contain">
@@ -26,26 +32,26 @@
                 <div class="concurso-informacion">
                     <h1 class="heading">Feria Empresarial</h1>
                     <p>¡Prepárate para un evento increíble con el SENA Casanare! Te invitamos a ser parte de nuestra Feria Empresarial, donde la innovación y los negocios se fusionan en un espacio único. Explora una amplia gama de stands que ofrecen productos innovadores y servicios vanguardistas, mientras te sumerges en charlas inspiradoras con líderes de la industria. Ya seas emprendedor, empresario o simplemente apasionado por el mundo empresarial, esta es tu oportunidad para conectarte, aprender y crecer. Regístrate ahora para asegurar tu lugar en esta emocionante feria que promete ser una experiencia enriquecedora llena de oportunidades de networking y conocimientos clave. ¡No te lo pierdas!</p>
+                    <a href="">Términos y condiciones
+                        <img src="/build/assets/arrow-right.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
         <section class="concursos-cards">
             <h1 class="heading">Participa en nuestros concursos</h1>
             <div class="cards">
-                <div class="card">
+                <div class="card card-1">
                     <h1>Academico</h1>
-                    <img src="/build/img/academico2.jpg" alt="Img academico">
-                    <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a>
+                    <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
                 </div>
-                <div class="card">
+                <div class="card card-2">
                     <h1>Feria Empresarial</h1>
-                    <img src="/build/img/feria2.jpg" alt="Img Feria">
-                    <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a>
+                    <a href="/views/Registro/feriaEmpresarial.php">Inscribete</a>
                 </div>
-                <div class="card">
+                <div class="card card-3">
                     <h1>Torneo de Robótica</h1>
-                    <img src="/build/img/robotica2.jpg" alt="Img Robotica">
-                    <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a>
+                    <a href="/views/Registro/Robotica.php">Inscribete</a>
                 </div>
             </div>
         </section>
@@ -56,22 +62,16 @@
                     <ul class="splide__list">
                         <li class="splide__slide slide-1">
                             <div>
-                                <h1 class="heading">Ponente 1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
+                                <h1 class="heading">Eliana Maria Ruiz Bayona</h1>
+                                <p>Médico Veterinario y Zootecnista, Esp. Nutrición Animal Sostenible, Candidata a Msc en Ciencias Veterinaria</p>
+                                <p>Evaluación  de la efectividad de la inseminación postcervical profunda en hembras porcinas de las provincias del Tundama y Sugamuxi.</p>
                             </div>
                             <img src="/build/assets/user.jpg" alt="imagen del ponente">
                         </li>
                         <li class="splide__slide slide-2">
                             <div>
-                                <h1 class="heading">Ponente 1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
-                            </div>
-                            <img src="/build/assets/user.jpg" alt="imagen del ponente">
-                        </li>
-                        <li class="splide__slide slide-3">
-                            <div>
-                                <h1 class="heading">Ponente 1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, expedita aspernatur vero nulla suscipit repudiandae, optio impedit deserunt praesentium alias, quas inventore nesciunt magni cupiditate numquam sequi nostrum consequatur reprehenderit!</p>
+                                <h1 class="heading">Juan Humberto Sossa Azuela</h1>
+                                <p>Es Doctor en Informática por el Instituto Nacional Politécnico de Grenoble, Francia, y profesor en el Instituto Politécnico Nacional. Lidera el Laboratorio de Robótica y Mecatrónica y es miembro Emérito del Sistema Nacional de Investigadores. Reconocido en la Academia Mexicana de Ciencias y la Academia de Ingeniería, es Fellow del IEEE y la Sociedad Mexicana de Inteligencia Artificial. Ha sido galardonado con el Premio Nacional de Computación y el Premio Nacional de la Academia de Ciencias de Cuba 2021. Con más de 450 publicaciones, su investigación abarca Inteligencia Artificial, Aprendizaje Automático, Robótica y Metaversos.</p>
                             </div>
                             <img src="/build/assets/user.jpg" alt="imagen del ponente">
                         </li>
@@ -81,9 +81,7 @@
         </section>
     </main>
     <footer class="footer">
-        <nav class="nav nav--footer">
-            <p>@SENA comunica</p>
-        </nav>
+        <p>@SENA comunica</p>
         
         <div class="footer__social">
             <a href="#" class="footer__icons"><img src="/build/assets/redes/facebook.png" class="footer__img"></a>

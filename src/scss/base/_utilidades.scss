@@ -38,6 +38,77 @@
     }
 }
 
+.concursos-cards {
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding: 2rem;
+
+        .card {
+            display: flex;
+            border-radius: .75rem;
+            flex-direction: column;
+            width: 40rem;
+            padding: 3rem;
+            height: 45rem;
+            background-size: cover;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: all .3s ease-out;
+
+            &.card-1 {
+                background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+            }
+            &.card-2 {
+                background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            }
+            &.card-3 {
+                background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+            }
+
+            h1 {
+                font-weight: $bold;
+                color: $bg-100;
+                margin-top: auto;
+            }
+            a {
+                margin-top: auto;
+                border-radius: .5rem;
+                padding: 1rem;
+                text-align: center;
+                color: $bg-100;
+                font-weight: $bold;
+                position: relative;
+                background-color: #ffffff63;
+
+                &::before {
+                    display: block;
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    background-color: $accent-300;
+                    position: absolute;
+                    transition: all .3s ease-out;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    border-radius: .5rem;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+}
 
 .modal-menu-phone {
     display: none;
@@ -152,6 +223,7 @@
     input[type='text'],
     input[type='number'],
     input[type='email'],
+    input[type='password'],
     input[type='date'],
     input[type='file'],
     textarea,

@@ -71,15 +71,15 @@ header {
                     background-repeat: no-repeat;
                     
                     &.slide-1 {
-                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide2.jpeg');
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/Academico.avif');
                         background-position: center center;
                     }
                     &.slide-2 {
-                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide1.jpeg');
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/Feria-empresarial.avif');
                         
                     }
                     &.slide-3 {
-                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/splide3.jpeg');
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/Torneo-robotica.avif');
                         background-position: right;
                     }
                 }

@@ -46,6 +46,21 @@
             </div>
         </div>
     </section>
+    <section class="concursos-cards">
+        <h1 class="heading">Participa en nuestros concursos</h1>
+        <div class="cards">
+            <div class="card">
+                <h1>Academico</h1>
+                <img src="/build/img/academico2.jpg" alt="Img academico">
+                <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a>
+            </div>
+            <div class="card">
+                <h1>Torneo de Robótica</h1>
+                <img src="/build/img/robotica2.jpg" alt="Img Robotica">
+                <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a>
+            </div>
+        </div>
+    </section>
 </main>
 <?php BorrarErrores(); ?>
 <script src="../../src/js/form_feria.js"></script>
