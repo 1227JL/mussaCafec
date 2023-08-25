@@ -184,8 +184,8 @@
         </div>
     <?php else: //si no se encontraron datos en la busqueda ?>
         <div class="sin-registros">
-                    <h3>Lo sentimos!</h3>
-                    <p>En el momento no hay ningun poster registrado</p>
+            <h3>Lo sentimos!</h3>
+            <p>En el momento no hay ningun poster registrado</p>
         </div>
     <?php endif; ?>
     </section>

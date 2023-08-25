@@ -6,7 +6,7 @@
     <main class="inicio">
         <div class="contain">     
             <h1 class="heading">¡Bienvenidos al VI Encuentro de Semilleros de Investigación SENA Regional Casanare!</h1>
-            <p>El VI Encuentro Regional de Semillero de Investigación de la Orinoquia, organizado por Sena regional Casanare, busca fomentar la investigación, innovación y desarrollo tecnológico entre aprendices e instructores al divulgar y reconocer el trabajo de semilleros y grupos de investigación en la región. El evento se propone como un espacio para que empresarios, aprendices, instructores y emprendedores aborden soluciones a situaciones reales en la región Orinoquia. Este encuentro busca generar soluciones prácticas y reales para diversas áreas diarias de empresarios, agricultores y ganaderos de Casanare, impulsando la creación de nuevo conocimiento aplicado con el apoyo de SENNOVA. El evento se llevará a cabo los días <span>17 y 18 de octubre de 2023</span> e incluirá ponencias, pósters, feria empresarial y un torneo de robótica.</p>
+            <p>El VI Encuentro Regional de Semillero de Investigación de la Orinoquia, organizado por Sena regional Casanare, busca fomentar la investigación, innovación y desarrollo tecnológico entre aprendices e instructores al divulgar y reconocer el trabajo de semilleros y grupos de investigación en la región. El evento se propone como un espacio para que empresarios, aprendices, instructores y emprendedores aborden soluciones a situaciones reales en la región Orinoquia. Este encuentro busca generar soluciones prácticas y reales para diversas áreas diarias de empresarios, agricultores y ganaderos de Casanare, impulsando la creación de nuevo conocimiento aplicado con el apoyo de SENNOVA. El evento se llevará a cabo los días <span class="error">17 y 18 de octubre de 2023</span> e incluirá ponencias, pósters, feria empresarial y un torneo de robótica.</p>
         </div>
         <section class="concursos">
             <div class="concurso">
@@ -15,9 +15,6 @@
                         <h1>Academico</h1>
                         <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
                     </div>
-                    <script>
-                        AOS.init();
-                    </script>
                     <div class="concurso-informacion">
                         <h1 class="heading">Academico</h1>
                         <p>¡Es hora de brillar en el escenario del conocimiento en el SENA Casanare! Te animamos a inscribirte en una de nuestras dos emocionantes categorías: ¡como ponente con tus ideas innovadoras o presentando un poster impactante! No pierdas la oportunidad de compartir y aprender. ¡Inscríbete ahora y sé parte de este evento excepcional!</p>
@@ -31,7 +28,7 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-2">
                         <h1>Feria Empresarial</h1>
-                        <a href="/views/Registro/Robotica.php">Inscribete</a>
+                        <a href="/views/Registro/feriaEmpresarial.php">Inscribete</a>  
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Feria Empresarial</h1>
@@ -46,7 +43,7 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-3">
                         <h1>Torneo de Robótica</h1>
-                        <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
+                        <a href="/views/Registro/Robotica.php">Inscribete</a>
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Torneo de Robótica</h1>

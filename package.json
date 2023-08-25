@@ -44,6 +44,7 @@
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "aos": "^2.3.4",
-    "dropzone": "^6.0.0-beta.2"
+    "dropzone": "^6.0.0-beta.2",
+    "sweetalert": "^2.1.2"
   }
 }

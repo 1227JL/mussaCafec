@@ -38,7 +38,6 @@
     }
 }
 
-
 .card {
     display: flex;
     border-radius: .75rem;
@@ -435,3 +434,121 @@ button#descargar {
 }
 
 
+.concursos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    // padding: 1rem;
+
+    p{
+        text-align: justify;
+    }
+    span{
+        color: $accent-200;
+    }
+    
+    .concurso {
+        background-color: #E8F5FB;
+        padding: 2rem 1rem;
+
+        .contain {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+            gap: 5rem;
+            
+            @include desktop {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include tablet {
+                padding: 3rem;
+            }
+        }
+
+        .concurso-informacion{
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                text-align: left;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                text-align: left;
+                margin-top: 2rem;
+                color: $bg-100;
+                padding: 1rem 1.5rem;
+                margin-right: auto;
+                border: 1px solid $text-100;
+                border-radius: .5rem;
+                background-color: $text-100;
+                transition: all .3s ease-out;
+                
+                img {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    filter: invert(100);
+                }
+                
+                &:hover {
+                    color: $text-100;
+                    background-color: #ffffff0a;
+                    cursor: pointer;
+
+                    img {
+                        filter: invert(0);
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(even) {
+            background-color: $bg-100;
+        }
+        
+        
+        @include desktop {
+            padding: 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            
+            &:nth-of-type(even){
+                direction: rtl;
+
+                .concurso-informacion {
+                    a{
+                        direction: ltr;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        .concurso {
+            flex: 1;
+        }
+        
+        @include desktop {
+            width: 70%;
+            margin: auto;
+            grid-template-columns: repeat(2, 2fr);
+        }
+    }
+}

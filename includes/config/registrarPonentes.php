@@ -31,7 +31,7 @@ $errores = [];
     $obtener = mysqli_query($db, $sql);
 
     if($obtener && mysqli_num_rows($obtener)==1){
-        $errores['existeRegistro'] = "El titulo de proyecto '$titulo' ya esta registrado! Por favor define otro.";
+        $errores['existeRegistro'] = "El titulo de proyecto '$titulo' ya esta registrado!. Por favor define otro.";
     }else{
 
         if (isset($_FILES['archivo_1']) && $_FILES['archivo_1']['error'] === UPLOAD_ERR_OK) {
