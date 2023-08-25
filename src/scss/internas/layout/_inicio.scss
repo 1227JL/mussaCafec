@@ -4,7 +4,8 @@ main.inicio {
     .concursos {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
+        margin-top: 5rem;
+        // padding: 1rem;
 
         p{
             text-align: justify;
@@ -14,9 +15,23 @@ main.inicio {
         }
         
         .concurso {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            align-items: center;
+            background-color: #E8F5FB;
+            padding: 2rem 1rem;
+
+            .contain {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                place-items: center;
+                gap: 5rem;
+                
+                @include desktop {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include tablet {
+                    padding: 3rem;
+                }
+            }
 
             .concurso-informacion{
                 display: flex;
@@ -56,9 +71,14 @@ main.inicio {
                     }
                 }
             }
+
+            &:nth-of-type(even) {
+                background-color: $bg-100;
+            }
             
             
             @include desktop {
+                padding: 0;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 4rem;
                 
@@ -86,7 +106,7 @@ main.inicio {
                     grid-template-columns: repeat(1, 1fr);
                     place-items: center;
                     gap: 2rem;
-                    padding: 5rem 0;
+                    padding: 3rem 0 6rem 0;
                     
                     div {
                         display: flex;
@@ -105,11 +125,11 @@ main.inicio {
                         }
 
                         p {
-                            text-align: center;
+                            text-align: justify;
                             font-size: 1.5rem;
-
-                            @include tablet {
-                                text-align: left;
+                            
+                            @include desktop {
+                                font-size: 1.8rem;
                             }
                         }
                     }
@@ -124,17 +144,6 @@ main.inicio {
                     }
                 }
             }
-        }
-    }
-
-    section {
-        padding: 2rem 0;
-        &:nth-of-type(even) {
-            background-color: $bg-200;
-        }
-    
-        @include tablet {
-            padding: 2rem;
         }
     }
 }

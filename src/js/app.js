@@ -1,4 +1,5 @@
 window.addEventListener('load', ()=> {
+    
     const splideElements = document.querySelectorAll('.splide');
 
     // Recorre cada elemento y crea una instancia de Splide
@@ -25,4 +26,7 @@ window.addEventListener('load', ()=> {
 
     menu.addEventListener('click', closeModal)
     closeButton.addEventListener('click', closeModal)
+
+    AOS.init();
+
 })
