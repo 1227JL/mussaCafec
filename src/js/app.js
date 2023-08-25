@@ -30,3 +30,14 @@ window.addEventListener('load', ()=> {
     AOS.init();
 
 })
+
+//VER TERMINOS PARA CATERORIA ACADEMICA
+function archivoAcademico() {
+    var rutaArchivo = "/resources/terminos/Terminosycondiciones_2023.pdf";
+    window.open(rutaArchivo, "_blank");
+}
+//VER TERMINOS PARA CATERORIA ROBOTICA
+function archivoRobotica() {
+    var rutaArchivo = "/resources/terminos/ITORNEO_ROBOTICA_SENA_2023.pdf";
+    window.open(rutaArchivo, "_blank");
+}

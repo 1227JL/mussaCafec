@@ -13,15 +13,12 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-1">
                         <h1>Academico</h1>
-                        <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
+                        <a href="/views/Registro/poster-ponentes.php">Registrate!</a>
                     </div>
-                    <script>
-                        AOS.init();
-                    </script>
                     <div class="concurso-informacion">
                         <h1 class="heading">Academico</h1>
-                        <p>¡Es hora de brillar en el escenario del conocimiento en el SENA Casanare! Te animamos a inscribirte en una de nuestras dos emocionantes categorías: ¡como ponente con tus ideas innovadoras o presentando un poster impactante! No pierdas la oportunidad de compartir y aprender. ¡Inscríbete ahora y sé parte de este evento excepcional!</p>
-                        <a href="">Términos y condiciones
+                        <p>¡VI Encuentro Regional de Semilleros de investigación SENA Regional Casanare, desde la innovación e investigación hacia la transferencia energética, tiene el objetivo de Fomentar la investigación, innovación y desarrollo tecnológico en los aprendices e instructores del Sena Regional Casanare a través de la divulgación y reconocimiento del trabajo desarrollado desde los semilleros y grupos de investigación de la región Orinoquia.!</p>
+                        <a onclick="archivoAcademico()">Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
                     </div>
@@ -31,12 +28,12 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-2">
                         <h1>Feria Empresarial</h1>
-                        <a href="/views/Registro/Robotica.php">Inscribete</a>
+                        <a href="/views/Registro/feriaEmpresarial.php">!Registrate</a>
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Feria Empresarial</h1>
-                        <p>¡Prepárate para un evento increíble con el SENA Casanare! Te invitamos a ser parte de nuestra Feria Empresarial, donde la innovación y los negocios se fusionan en un espacio único. Explora una amplia gama de stands que ofrecen productos innovadores y servicios vanguardistas, mientras te sumerges en charlas inspiradoras con líderes de la industria. Ya seas emprendedor, empresario o simplemente apasionado por el mundo empresarial, esta es tu oportunidad para conectarte, aprender y crecer. Regístrate ahora para asegurar tu lugar en esta emocionante feria que promete ser una experiencia enriquecedora llena de oportunidades de networking y conocimientos clave. ¡No te lo pierdas!</p>
-                        <a href="">Términos y condiciones
+                        <p>¡Un espació que reúne en un mismo lugar a emprendedores, estudiantes y aprendices con el propósito de visibilizar sus emprendimientos, negocios o proyectos que cuenten con productos y servicios que puedan ser ofrecidos a la comunidad.!</p>
+                        <a>Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
                     </div>
@@ -46,12 +43,12 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-3">
                         <h1>Torneo de Robótica</h1>
-                        <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
+                        <a href="/views/Registro/Robotica.php">Registrate!</a>
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Torneo de Robótica</h1>
-                        <p>¡Prepárate para un desafío emocionante en el mundo de la robótica! El SENA Casanare te invita a inscribirte en nuestro Concurso de Robótica, donde podrás demostrar tus habilidades y creatividad. Tenemos varias categorías esperándote, desde la competencia de robots autónomos hasta el diseño de soluciones robóticas innovadoras. ¡No pierdas la oportunidad de participar! Inscríbete ahora y sé parte de esta emocionante aventura tecnológica. ¡Tu ingenio nos sorprenderá!</p>
-                        <a href="">Términos y condiciones
+                        <p>¡1er Torneo de Robótica SENA Regional Casanare, proyecto que busca fortalecer las capacidades y habilidades en temas ciencia, tecnología, innovación, ingeniería y robótica a través de la competencia en robot seguidor de línea velocistas, robot de batalla mini-sumo, robot futbolero y robot SENABOT.!</p>
+                        <a onclick="archivoRobotica()">Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
                     </div>
@@ -84,13 +81,12 @@
         </section>
     </main>
     <footer class="footer">
-        <p>@SENA comunica</p>
-        
+        <img class="icon-footer" src="/build/img/LogoSENA_Sennova.png" alt="@SENA comunica">
         <div class="footer__social">
-            <a href="#" class="footer__icons"><img src="/build/assets/redes/facebook.png" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="/build/assets/redes/instagram.png" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="/build/assets/redes/twitter.png" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="/build/assets/redes/youtube.png" class="footer__img"></a>
+            <a href="https://www.facebook.com/SENACasanare" class="footer__icons"><img src="/build/assets/redes/facebook.png" class="footer__img"></a>
+            <a href="https://instagram.com/senacomunica?igshid=MzRlODBiNWFlZA==" class="footer__icons"><img src="/build/assets/redes/instagram.png" class="footer__img"></a>
+            <a href="https://twitter.com/SENACasanare?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footer__icons"><img src="/build/assets/redes/twitter.png" class="footer__img"></a>
+            <a href="https://www.youtube.com/@SENAComunica" class="footer__icons"><img src="/build/assets/redes/youtube.png" class="footer__img"></a>
         </div>
     </footer>
 </body>

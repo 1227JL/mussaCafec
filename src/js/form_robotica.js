@@ -1,16 +1,3 @@
-//funcion para descargar el archivo Robotica
-function descargarArchivoRobotica() {
-    var archivoRobotica = "../../resources/formatos/ITORNEO_ROBOTICA_SENA_2023.pdf"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
-    // Obtén la extensión del archivo seleccionado
-    var nombreArchivoRobotica = "TORNEO-DE-ROBOTICA-SENA-CAFEC_esp_técnicas_cat.pdf";
-    // Crea un enlace <a> temporal para la descarga
-    var enlaceDescargaRobotica = document.createElement('a');
-    enlaceDescargaRobotica.href = archivoRobotica;
-    enlaceDescargaRobotica.download = nombreArchivoRobotica;
-    // Simula un clic en el enlace para iniciar la descarga
-    enlaceDescargaRobotica.click();
-}
-
 $(document).ready(function(){
     $("#form-robotica").validate({
 

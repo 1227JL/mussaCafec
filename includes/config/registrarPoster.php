@@ -31,10 +31,15 @@ if($obtener && mysqli_num_rows($obtener)==1){
 }else{
     
     if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) {
-    $nombreArchivo = $_FILES['archivo']['name'];
+    $nombreOriginal = $_FILES['archivo']['name'];
     $tamañoArchivo = $_FILES['archivo']['size'];
     $tipoArchivo = $_FILES['archivo']['type'];
     $archivoTemporal = $_FILES['archivo']['tmp_name'];
+    $idUnico = uniqid();
+    $extension = pathinfo($nombreOriginal, PATHINFO_EXTENSION);
+
+    // Limitar el nombre del archivo a 50 caracteres
+    $nombreArchivo = substr($nombreOriginal, 0, 50 - strlen($extension)). "-" . $idUnico . "." . $extension;
 
     // Validar el tipo y tamaño del archivo
     $extensionValida = 'application/pdf';    

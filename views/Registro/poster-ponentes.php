@@ -49,6 +49,7 @@
                                 <option value="">Seleccione una opcion</option>
                                 <option value="Empresarial">Empresarial</option>
                                 <option value="Agroindustrial">Agroindustrial</option>
+                                <option value="Agropecuario">Agropecuario</option>
                                 <option value="Energías renovables">Energías renovables</option>
                                 <option value="Protección al medio ambiente">Protección al medio ambiente</option>
                                 <option value="Arquitectura y Construcciones Sostenibles">Arquitectura y Construcciones Sostenibles</option>
@@ -156,6 +157,7 @@
                         <div class="coolinput files">
                             <span class="form-title">Se debe cargar la presentación o diseño del poster en pdf. (Tamaño máximo por
                                 documento 20Mb)</span>
+                                <span class="form-title">El documento debe ir nombrado por el titulo del proyecto.</span>
                             <label for="file-input" class="drop-container">
                                 <span class="drop-title">Selecciona tus archivos aqui.</span>
                                 <input type="file" accept=".pdf" id="file-input" name="archivo">

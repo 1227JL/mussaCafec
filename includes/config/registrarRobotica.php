@@ -7,6 +7,7 @@ $db = conectarDB();
 $categoria = limpiar_cadena($_POST['categoria']);
 $institucion = limpiar_cadena($_POST['InstitucionRobotica']);
 $titulo = limpiar_cadena($_POST['tituloR']);
+$Representante = limpiar_cadena($_POST['representante']);
 $email = limpiar_cadena($_POST['correo']);
 $contacto = limpiar_cadena($_POST['contacto']);
 $check = $_POST['confirmacion'];
@@ -30,14 +31,16 @@ if(count($errores)== 0){
     categoria,
     institucion,
     nombre_proyecto,
+    representante,
     contacto,
     correo,
-    confirmacion) VALUES ( ?, ?, ?, ?, ?, ?);";
+    confirmacion) VALUES ( ?, ?, ?, ?, ?, ?, ?);";
         $stmt = mysqli_prepare($db, $query);
-        mysqli_stmt_bind_param($stmt, "ssssss",
+        mysqli_stmt_bind_param($stmt, "sssssss",
             $categoria,
             $institucion, 
             $titulo,
+            $Representante,
             $contacto,
             $email,
             $check

@@ -29,8 +29,8 @@ CREATE TABLE ponentes (
     contacto_3 VARCHAR(15),
     titulo_proyecto VARCHAR(60) not null,
     tipo_proyecto VARCHAR(10) not null,
-    archivo_1 VARCHAR(60) not null,
-    archivo_2 VARCHAR(60) not null,
+    archivo_1 VARCHAR(70) not null,
+    archivo_2 VARCHAR(70) not null,
     CONSTRAINT pk_ponentes PRIMARY KEY(id)
 )ENGINE = InnoDb;
 
@@ -47,7 +47,7 @@ CREATE TABLE poster(
     correo_3 varchar(30),
     contacto_3 varchar(15),
     titulo VARCHAR(60) not null,
-    archivo VARCHAR(60) not null,
+    archivo VARCHAR(70) not null,
     CONSTRAINT pk_poster PRIMARY KEY(id)
 )Engine=InnoDb;
 
@@ -64,6 +64,7 @@ CREATE TABLE robotica (
     categoria VARCHAR(40) not null,
     institucion VARCHAR(100) not null,
     nombre_proyecto VARCHAR(60) not null,
+    representante VARCHAR(50) not null,
     contacto VARCHAR(15) not null,
     correo varchar(50)not null,
     confirmacion varchar(20) not null,

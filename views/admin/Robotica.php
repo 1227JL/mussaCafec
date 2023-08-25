@@ -60,6 +60,10 @@
                 <input type="text" value="<?=$datos['nombre_proyecto']?>" class="input" id="tituloR" name="tituloR">
             </div>
             <div class="coolinput">
+                <label for="representante" class="text">Nombre del representante:</label>
+                <input type="text" value="<?=$datos['representante']?>" class="input" id="representante" name="representante">
+            </div>
+            <div class="coolinput">
                 <label for="Email" class="text">Email:</label>
                 <input type="email" value="<?=$datos['correo']?>" name="correo" class="input" id="Email">
             </div>
@@ -124,8 +128,12 @@
                         <p><?= $datosR['institucion']?></p>
                     </div>
                     <div class="datos">
-                        <span>Nombre del Proyecto</span>
+                        <span>Nombre de Equipo</span>
                         <p class="Proyecto"><?= $datosR['nombre_proyecto']?></p>
+                    </div>
+                    <div class="datos">
+                        <span>Nombre del representante</span>
+                        <p><?= $datosR['representante']?></p>
                     </div>
                     <div class="datos">
                         <span>Contacto</span>

@@ -16,10 +16,6 @@
     <div class="categorias_div">
         <div class="title-categorias">
             <h1 class="heading">Robotica</h1>
-            <div class="descargar-formato">
-                <p>Recuerda descargar el formato necesario para esta actividad</p>
-                <button class="boton-amarillo-block" id="descargar" onclick="descargarArchivoRobotica()">Descargar <img class="icon-descarga" src="/build/assets/download.png" alt=""></button>
-            </div>
         </div>    
         <div class="formulario">
             <form action="../../includes/config/registrarRobotica.php" method="POST" class="form" id="form-robotica">
@@ -40,16 +36,20 @@
                         <input type="text" placeholder="Nombre de la Institucion" name="InstitucionRobotica" class="input" id="InstitucionRobotica">
                     </div>
                     <div class="coolinput">
-                        <label for="tituloR" class="text">Titulo de proyecto:</label>
+                        <label for="tituloR" class="text">Nombre de Equipo:</label>
                         <input type="text" placeholder="..." class="input" id="tituloR" name="tituloR">
                     </div>
                     <div class="coolinput">
+                        <label for="representante" class="text">Representante del equipo:</label>
+                        <input type="text" placeholder="Nombre completo del representante..." class="input" id="representante" name="representante">
+                    </div>
+                    <div class="coolinput">
                         <label for="Email" class="text">Email:</label>
-                        <input type="email" placeholder="Ingresa un correo ..." name="correo" class="input" id="Email">
+                        <input type="email" placeholder="Email del representante..." name="correo" class="input" id="Email">
                     </div>
                     <div class="coolinput">
                         <label for="contacto" class="text">Contacto:</label>
-                        <input type="text" placeholder="Define un contacto..." name="contacto" class="input" id="contacto">
+                        <input type="text" placeholder="Contacto del representante..." name="contacto" class="input" id="contacto">
                     </div>
                     <div class="coolinput terminos">
                         <input type="checkbox"  name="confirmacion" class="input" id="confirmacion">

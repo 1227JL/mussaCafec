@@ -96,9 +96,9 @@ function crearCampos() {
 }
 //funcion para descargar el archivo ponente
 function descargarArchivoPonente() {
-    var archivoPonencia = "../../resources/formatos/formatos_ponencia.rar"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
+    var archivoPonencia = "../../resources/formatos/formatos_ponencia.rar";  //
     // Define el nombre del archivo para descarga
-    var nombreArchivoPonencia = "formatos_Ponencia.rar";
+    var nombreArchivoPonencia = "formatos_ponencia.rar";
     // Crea un enlace <a> temporal para la descarga
     var enlaceDescargaPonencia = document.createElement('a');
     enlaceDescargaPonencia.href = archivoPonencia;
@@ -164,8 +164,8 @@ participantesInput.addEventListener('input', () => {
 });
 //funcion para descargar el archivo poster
 function descargarArchivoPoster() {
-    var archivoPoster = "../../resources/formatos/formatos_poster.rar"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
-    var nombreArchivoPoster = "formatos_poster.rar";
+    var archivoPoster = "../../resources/formatos/Diseño-poster-GUIA-VI-Encuentro-SENA.pptx"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
+    var nombreArchivoPoster = "Diseño-poster-GUIA-VI-Encuentro-SENA.pptx";
     var enlaceDescargaPoster = document.createElement('a');
     enlaceDescargaPoster.href = archivoPoster;
     enlaceDescargaPoster.download = nombreArchivoPoster;

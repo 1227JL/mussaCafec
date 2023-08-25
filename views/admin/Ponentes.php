@@ -49,6 +49,7 @@
                         <option value="">Seleccione una opcion</option>
                         <option value="Empresarial" <?= $datos['eje_tematico'] == 'Empresarial' ? 'selected' : ''; ?>>Empresarial</option>
                         <option value="Agroindustrial" <?= $datos['eje_tematico'] == 'Agroindustrial' ? 'selected' : ''; ?>>Agroindustrial</option>
+                        <option value="Agropecuario" <?= $datos['eje_tematico'] == 'Agroindustrial' ? 'selected' : ''; ?>>Agropecuario</option>
                         <option value="Energías renovables" <?= $datos['eje_tematico'] == 'Energías renovables' ? 'selected' : ''; ?>>Energías renovables</option>
                         <option value="Protección al medio ambiente" <?= $datos['eje_tematico'] == 'Protección al medio ambiente' ? 'selected' : ''; ?>>Protección al medio ambiente</option>
                         <option value="Arquitectura y Construcciones Sostenibles" <?= $datos['eje_tematico'] == 'Arquitectura y Construcciones Sostenibles' ? 'selected' : ''; ?>>Arquitectura y Construcciones Sostenibles</option>
@@ -245,7 +246,7 @@
                             <?php endif; ?>
                             <div class="datos">
                                 <span>Archivo para expocision</span>
-                                <a href="../../uploads/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
+                                <a href="/uploads/ponentes/<?= $datos['archivo_1']?>" download><?= $datos['archivo_1']?></a>
                             </div>
                             <div class="datos">
                                 <span>archivo de informacion</span>
