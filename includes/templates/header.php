@@ -13,6 +13,7 @@
     <script src="../../src/js/jquery-3.2.1.js"></script>
     <script src="../../src/js/jquery_validate.js"></script>
     <script src="/node_modules/aos/dist/aos.js"></script>
+    <script src="/node_modules/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <header class="header <?php echo isset($inicio) && $inicio ? 'absolute' : 'relative'?>">

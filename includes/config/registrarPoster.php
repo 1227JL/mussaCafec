@@ -27,7 +27,7 @@ $sql = "SELECT * FROM poster WHERE titulo = '$titulo';";
 $obtener = mysqli_query($db, $sql);
 
 if($obtener && mysqli_num_rows($obtener)==1){
-    $errores['existeRegistro'] = "El titulo de proyecto '$titulo' ya esta registrado! Por favor define otro.";
+    $errores['existeRegistro'] = "El titulo de proyecto '$titulo' ya esta registrado!. Por favor define otro.";
 }else{
     
     if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) {
@@ -102,7 +102,7 @@ if (count($errores) == 0) {
     
     if (mysqli_stmt_execute($stmt)) {
         $_SESSION['registrado'] = "
-            <p>El proyecto '$titulo' ha sido registrado correctamente en la categoria Poster</p>
+            El proyecto '$titulo' ha sido registrado correctamente en la categoria Poster
         " ;
     }
 }else{

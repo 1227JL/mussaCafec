@@ -3,16 +3,20 @@
     require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
 ?>
-<?php if(isset($_SESSION['registrado'] )): ?>
-<div class='alert-success'>
-    <?= $_SESSION['registrado'] ; ?>
-</div>
+<?php if(isset($_SESSION['registrado'])): ?>
+    <script>
+        swal({
+            title: "¡Registro Exitoso!",
+            text: "¡Felicitaciones!, Tu registro se ha completado con éxito.",
+            icon: "success"
+        });
+    </script>
 <?php endif; ?>
 <main class="formularios">
 <div class="alert-error">
     <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
 </div>
-<section class="categorias" id="Robotica">
+<section class="categorias seccion" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
             <h1 class="heading">Robotica</h1>
@@ -59,18 +63,24 @@
             </form>
         </div>
     </div>
-    <section class="concursos-cards">
-        <h1 class="heading">Participa en nuestros concursos</h1>
+    <section class="flex-wrap">
+        <h1 class="heading">Otros Concursos</h1>
         <div class="cards">
-            <div class="card">
-                <h1>Academico</h1>
-                <img src="/build/img/academico2.jpg" alt="Img academico">
-                <a href="/views/Registro/poster-ponentes.php" class="boton-verde-block">Inscribete</a>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-1">
+                        <h1>Academico</h1>
+                        <a href="/views/Registro/poster-ponentes.php">Inscribete</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h1>Feria Empresarial</h1>
-                <img src="/build/img/feria2.jpg" alt="Img Feria">
-                <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-2">
+                        <h1>Feria Empresarial</h1>
+                        <a href="/views/Registro/feriaEmpresarial.php">Inscribete</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

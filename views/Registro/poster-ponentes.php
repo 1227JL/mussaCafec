@@ -2,14 +2,17 @@
     require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
 ?>
-<?php if(isset($_SESSION['registrado'] )): ?>
-<div class='message-register'>
-    <?= $_SESSION['registrado'] ; ?>
-</div>
+<?php if(isset($_SESSION['registrado'])): ?>
+    <script>
+        swal({
+            title: "¡Registro Exitoso!",
+            text: "¡Felicitaciones!, Tu registro se ha completado con éxito.",
+            icon: "success"
+        });
+    </script>
 <?php endif; ?>
-
 <main class="formularios">
-    <div class="errores-archivos">
+    <div class="alert-error">
         <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'tamaño'):"" ?>
         <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'formato-docx'):"" ?>
         <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'error-archivo'):"" ?>
@@ -169,18 +172,24 @@
             </div>
         </div>
     </section>
-    <section class="concursos-cards">
-        <h1 class="heading">Participa en nuestros concursos</h1>
+    <section class="flex-wrap">
+        <h1 class="heading">Otros Concursos</h1>
         <div class="cards">
-            <div class="card">
-                <h1>Feria Empresarial</h1>
-                <img src="/build/img/feria2.jpg" alt="Img Feria">
-                <a href="/views/Registro/feriaEmpresarial.php" class="boton-verde-block">Inscribete</a>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-2">
+                        <h1>Feria Empresarial</h1>
+                        <a href="/views/Registro/feriaEmpresarial.php">Inscribete</a>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h1>Torneo de Robótica</h1>
-                <img src="/build/img/robotica2.jpg" alt="Img Robotica">
-                <a href="/views/Registro/Robotica.php" class="boton-verde-block">Inscribete</a>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-3">
+                        <h1>Torneo de Robótica</h1>
+                        <a href="/views/Registro/Robotica.php">Inscribete</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
