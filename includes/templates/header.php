@@ -43,7 +43,10 @@
             </ul>
         </div>
         <nav class="nav">
-            <h1 class="heading">Mussa Cafec</h1>
+            <div class="logo">
+                <img src="/build/assets/logo.png" alt="logo sena">
+                <h1 class="heading">Mussa Cafec</h1>
+            </div>
             <ul class="nav__link">
                 <li class="nav__item">
                     <a href="/">Inicio</a>

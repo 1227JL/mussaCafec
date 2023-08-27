@@ -1,4 +1,16 @@
 header {
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        img {
+            display: block;
+            width: 8rem;
+            height: 8rem;
+            filter: invert(100);
+        }
+    }
     h1 {
         color: $bg-100;
         margin: 0;

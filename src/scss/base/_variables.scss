@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-// Fuentes
-$fuente_principal: 'Work Sans', sans-serif;
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// // Fuentes
+// $fuente_principal: 'Work Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+$fuente_principal: 'Quicksand', sans-serif;
 
 // Tamaño de Media Queries
 $telefono: 480px;

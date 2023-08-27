@@ -18,12 +18,6 @@
     <?= $_SESSION['editado'] ; ?>
 </div>
 <?php endif; ?>
-<?php if(isset($_SESSION['delete'] )): ?>
-<div class='alert-error'>
-    <?= $_SESSION['delete'] ; ?>
-</div>
-<?php endif; ?>
-
 
 <main class="contain formularios">
     <div class="errores-archivos">
@@ -147,8 +141,30 @@
                         <span>Terminos</span>
                         <p ><?= $datosR['confirmacion']?></p>
                     </div>
-                    <a class="boton-rojo-block" href="../../includes/config/borrarRobotica.php?delete_id=<?=$datosR['id']?>" class="delete">Eliminar registro</a>
+                    <a class="boton-rojo-block" onclick="eliminarRegistro(<?= $datosR['id']?>)">Eliminar registro</a>
                     <a class="boton-verde-block" href="Robotica.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>
+                    <script>
+                        function eliminarRegistro(id){
+                            swal({
+                                title: "¿Estás seguro?",
+                                text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                                icon: "warning",
+                                buttons: true,
+                                dangerMode: true,
+                            })
+                            .then((willDelete) => {
+                                if (willDelete) {
+                                    swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                        icon: "success",
+                                    }).then((willDelete) => {
+                                        window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`
+                                    });
+                                } else {
+                                    swal("¡Tu registro está a salvo!");
+                                }
+                            });
+                        }
+                    </script>
                 </div>
                 <br>
             </div>

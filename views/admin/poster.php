@@ -18,11 +18,6 @@
     <?= $_SESSION['editado'] ; ?>
 </div>
 <?php endif; ?>
-<?php if(isset($_SESSION['delete'] )): ?>
-<div class='message-delete'>
-    <?= $_SESSION['delete'] ; ?>
-</div>
-<?php endif; ?>
 
 <main class="contain formularios">
     <div class="errores-archivos">
@@ -100,7 +95,7 @@
                 </label>
             </div>
             <div class="coolinput">
-                <input class="boton-verde-block" type="submit" value="Guardar Cambios" class="button-registro">
+                <input class="boton-verde-block" type="submit" onclick="editarRegistro(<?=$datosPoster['id']?>)" value="Guardar Cambios" class="button-registro">
             </div>
         </fieldset>
     </form>
@@ -175,8 +170,30 @@
                             <span>archivo de informacion</span>
                             <a href="../../uploads/poster/<?= $datosPoster['archivo']?>" download><?= $datosPoster['archivo']?></a>
                         </div>
-                        <a class="boton-rojo-block" href="../../includes/config/borrarPoster.php?delete_id=<?=$datosPoster['id']?>" class="delete">Eliminar registro</a>
+                        <a class="boton-rojo-block" onclick="eliminarRegistro(<?= $datosPoster['id']?>)">Eliminar registro</a>
                         <a class="boton-verde-block" href="poster.php?edit_id=<?=$datosPoster['id']?>" class="edit">Editar registro</a>
+                        <script>
+                            function eliminarRegistro(id){
+                                swal({
+                                    title: "¿Estás seguro?",
+                                    text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                                    icon: "warning",
+                                    buttons: true,
+                                    dangerMode: true,
+                                })
+                                .then((willDelete) => {
+                                    if (willDelete) {
+                                        swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                            icon: "success",
+                                        }).then((willDelete) => {
+                                            window.location.href = `../../includes/config/borrarPoster.php?delete_id=${id}`
+                                        });
+                                    } else {
+                                        swal("¡Tu registro está a salvo!");
+                                    }
+                                });
+                            }
+                        </script>
                     </div>
                     <br>
                 </div>
