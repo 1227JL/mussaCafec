@@ -14,7 +14,7 @@
     require_once 'includes/templates/nav.php';
 ?>
 <?php if(isset($_SESSION['editado'] )): ?>
-<div class='message-edit'>
+<div class='alert-success'>
     <?= $_SESSION['editado'] ; ?>
 </div>
 <?php endif; ?>

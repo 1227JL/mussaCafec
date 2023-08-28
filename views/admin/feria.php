@@ -14,15 +14,11 @@
     require_once 'includes/templates/nav.php';
 ?>
 <?php if(isset($_SESSION['editado'] )): ?>
-<div class='message-edit'>
+<div class='alert-success'>
     <?= $_SESSION['editado'] ; ?>
 </div>
 <?php endif; ?>
-<?php if(isset($_SESSION['delete'] )): ?>
-<div class='message-delete'>
-    <?= $_SESSION['delete'] ; ?>
-</div>
-<?php endif; ?>
+
 <main class="contain formularios">
     <div class="errores-archivos">
         <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
@@ -89,8 +85,30 @@
                         <span>Titulo de proyecto</span>
                         <p id="titulo_feria"><?= $datosFeria['titulo_proyecto']?></p>
                     </div>
-                    <a class="boton-rojo-block" href="../../includes/config/borrarferia.php?delete_id=<?=$datosFeria['id']?>" class="delete">Eliminar registro</a>
+                    <a class="boton-rojo-block" onclick="eliminarRegistro(<?=$datosFeria['id']?>)" class="delete">Eliminar registro</a>
                     <a class="boton-verde-block" href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>
+                    <script>
+                        function eliminarRegistro(id){
+                            swal({
+                                title: "¿Estás seguro?",
+                                text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                                icon: "warning",
+                                buttons: true,
+                                dangerMode: true,
+                            })
+                            .then((willDelete) => {
+                                if (willDelete) {
+                                    swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                        icon: "success",
+                                    }).then((willDelete) => {
+                                        window.location.href = `../../includes/config/borrarferia.php?delete_id=${id}`
+                                    });
+                                } else {
+                                    swal("¡Tu registro está a salvo!");
+                                }
+                            });
+                        }
+                    </script>
                 </div>
                 <br>
             </div>
