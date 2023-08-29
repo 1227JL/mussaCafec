@@ -21,9 +21,19 @@ main.inicio {
                         h1.heading {
                             text-align: center;
                             font-size: 2.4rem;
-                            
+                            padding: 2rem 0;
+                            position: relative;
                             @include tablet {
                                 text-align: left;
+                            }
+
+                            &::after {
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                width: 65%;
+                                background-color: $primary-100;
+                                height: .4rem;
                             }
                         }
 
@@ -36,10 +46,22 @@ main.inicio {
                             }
                         }
                     }
-                    
+
                     img {
-                        height: 12rem;
-                        width: 12rem;
+                        height: 16rem;
+                        width: 16rem;
+                    }
+                    
+                    .ponente_image {
+                        height: 30rem;
+                        width: 30rem;
+                        border-radius: 100%;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                    
+                    &.slide-2 .ponente_image {
+                        background-image: url('/build/img/ponentes/Juan\ Humberto\ Sossa\ Azuela.jpeg');
                     }
                     
                     @include tablet {

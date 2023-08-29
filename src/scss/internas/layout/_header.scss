@@ -55,7 +55,6 @@ header {
                     font-weight: $bold;
                     color: $bg-100;
                     padding: 2rem;
-
                 }
 
                 &:hover {
@@ -76,23 +75,36 @@ header {
 
     .splide {
         .splide__track {
-            height: 70rem;
+            height: 80rem;
             .splide__list {
                 .splide__slide {
-                    background-size: contain;
+                    background-size:cover;
                     background-repeat: no-repeat;
                     
                     &.slide-1 {
                         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/VIencuentro.jpeg');
                         background-position: center center;
+                        background-size: contain;
                     }
                     &.slide-2 {
-                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/Feria-empresarial.avif');
-                        
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/splide2.jpg');
+                        background-position: center center;
                     }
                     &.slide-3 {
-                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/Torneo-robotica.avif');
-                        background-position: right;
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/splide3.jpg');
+                        background-position: center center;
+                    }
+                    &.slide-4 {
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/splide4.jpeg');
+                        background-position: center center;
+                    }
+                    &.slide-5 {
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/splide5.jpeg');
+                        background-position: center center;
+                    }
+                    &.slide-6 {
+                        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/splide6.jpeg');
+                        background-position: center center;
                     }
                 }
             }
@@ -117,8 +129,10 @@ header {
     
                 .nav__item {
     
-                    a {
+                    a{
                         // color: $text-100;
+                        font-size: 1.6rem;
+                        font-weight: 700;
                     }
                 }
             }
@@ -147,6 +161,8 @@ header {
                 border-radius: .5rem;
                 color: $bg-100;
                 transition: background-color .3s ease-out;
+                font-size: 1.8rem;
+                font-weight: 700;
 
                 &:hover {
                     background-color: #ffffff63;

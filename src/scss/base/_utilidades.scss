@@ -48,7 +48,8 @@
     background-size: cover;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: all .3s ease-out;
-
+    background-repeat: no-repeat;
+    
     &.card-1 {
         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
     }
@@ -56,7 +57,8 @@
         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     }
     &.card-3 {
-        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/robotica.jpeg');
+        background-position: center right;
     }
 
     h1 {

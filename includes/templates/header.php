@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mussa Cafec</title>
+    <link rel="shortcut icon" href="/build/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
     <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
@@ -76,6 +77,9 @@
                     <li class="splide__slide slide-1"></li>
                     <li class="splide__slide slide-2"></li>
                     <li class="splide__slide slide-3"></li>
+                    <li class="splide__slide slide-4"></li>
+                    <li class="splide__slide slide-5"></li>
+                    <li class="splide__slide slide-6"></li>
                     </ul>
                 </div>
             </div>
