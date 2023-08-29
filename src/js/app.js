@@ -41,3 +41,8 @@ function archivoRobotica() {
     var rutaArchivo = "/resources/terminos/ITORNEO_ROBOTICA_SENA_2023.pdf";
     window.open(rutaArchivo, "_blank");
 }
+//VER TERMINOS PARA CATERORIA Feria
+function archivoFeria() {
+    var rutaArchivo = "/resources/terminos/terminos_feriaEmpresarial.pdf";
+    window.open(rutaArchivo, "_blank");
+}
