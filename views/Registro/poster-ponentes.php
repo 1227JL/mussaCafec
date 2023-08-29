@@ -179,7 +179,7 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-2">
                         <h1>Feria Empresarial</h1>
-                        <a href="/views/Registro/feriaEmpresarial.php">Inscribete</a>
+                        <a href="/views/registro/feriaEmpresarial.php">Inscribete</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-3">
                         <h1>Torneo de Robótica</h1>
-                        <a href="/views/Registro/Robotica.php">Inscribete</a>
+                        <a href="/views/registro/Robotica.php">Inscribete</a>
                     </div>
                 </div>
             </div>
