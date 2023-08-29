@@ -79,7 +79,7 @@ header {
             height: 70rem;
             .splide__list {
                 .splide__slide {
-                    background-size: cover;
+                    background-size: contain;
                     background-repeat: no-repeat;
                     
                     &.slide-1 {
