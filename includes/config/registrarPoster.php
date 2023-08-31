@@ -109,5 +109,5 @@ if (count($errores) == 0) {
     $_SESSION['errores'] = $errores;
 }
 mysqli_close($db);
-header('location:../../views/registro/poster-ponentes.php');
+header('location:../../views/Registro/poster-ponentes.php');
 ?>
