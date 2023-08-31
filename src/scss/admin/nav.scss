@@ -13,12 +13,12 @@
 
     }
 
-    // @include tablet {
-    //     height: 10rem;
-    //     grid-template-columns: repeat(2, 1fr);
-    // }
-    // @include desktop {
-    //     grid-template-columns: repeat(4, 1fr);
-    // }
+    @include tablet {
+        height: 10rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 } 
