@@ -39,5 +39,5 @@ $errores = [];
 
 
 mysqli_close($db);
-header('location:../../views/registro/feriaEmpresarial.php');
+header('location:../../views/Registro/feriaEmpresarial.php');
 ?>

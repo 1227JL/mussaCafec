@@ -3,12 +3,13 @@
     require_once '../../includes/config/utils.php';
 ?>
 <?php if(isset($_SESSION['error-login'])): ?>
-<div class='message-delete'>
+<div class='alert-error'>
     <?= $_SESSION['error-login'] ; ?>
 </div>
 <?php endif;?>
 
 <main class="contain login">
+    <h1 class="heading">Panel Administrativo</h1>
     <form action="../../includes/config/iniciar_sesion.php" method="POST">
         <div class="coolinput">
             <label for="usuario" class="text">Usuario:</label>

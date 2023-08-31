@@ -2,6 +2,9 @@ main.inicio {
     margin-top: 5rem;
 
     .ponentes {
+        h1 {
+            margin-bottom: 0;
+        }
         .splide {
             .splide__track {
                 .splide__slide {
@@ -31,9 +34,17 @@ main.inicio {
                                 display: block;
                                 content: "";
                                 position: absolute;
-                                width: 65%;
+                                width: 100%;
                                 background-color: $primary-100;
                                 height: .4rem;
+
+                                @include tablet{
+                                    width: 95%;
+                                }
+
+                                @include desktop{
+                                    width: 65%;
+                                }
                             }
                         }
 

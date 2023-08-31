@@ -56,6 +56,6 @@ if(count($errores)== 0){
 }
 
 mysqli_close($db);
-header('location:../../views/registro/Robotica.php');
+header('location:../../views/Registro/Robotica.php');
 
 ?>

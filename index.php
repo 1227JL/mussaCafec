@@ -44,7 +44,7 @@
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Torneo de Robótica</h1>
-                        <p>¡1er Torneo de Robótica SENA Regional Casanare, proyecto que busca fortalecer las capacidades y habilidades en temas ciencia, tecnología, innovación, ingeniería y robótica a través de la competencia en robot seguidor de línea velocistas, robot de batalla mini-sumo, robot futbolero y robot SENABOT.!</p>
+                        <p>1er Torneo de Robótica SENA Regional Casanare, proyecto que busca fortalecer las capacidades y habilidades en temas ciencia, tecnología, innovación, ingeniería y robótica a través de la competencia en robot seguidor de línea velocistas, robot de batalla mini-sumo, robot futbolero y robot SENABOT</p>
                         <a onclick="archivoRobotica()">Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
