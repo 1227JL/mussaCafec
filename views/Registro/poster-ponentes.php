@@ -158,7 +158,7 @@
                             <input type="text" placeholder="..." name="tituloProyecto" class="input" id="tituloProyecto">
                         </div>
                         <div class="coolinput files">
-                            <span class="form-title">Se debe cargar la presentación o diseño del poster en pdf. (Tamaño máximo por
+                            <span class="form-title">Se debe cargar la presentación o diseño del poster en pdf. (Tamaño máximo del
                                 documento 20Mb)</span>
                                 <span class="form-title">El documento debe ir nombrado por el titulo del proyecto.</span>
                             <label for="file-input" class="drop-container">

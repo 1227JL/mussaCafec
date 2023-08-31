@@ -41,9 +41,10 @@ $errores = [];
             $archivoTemporal = $_FILES['archivo_1']['tmp_name'];
             $idUnico = uniqid();
             $extension = pathinfo($nombreArchivoOriginal, PATHINFO_EXTENSION);
+            $nameSinExtension = pathinfo($nombreArchivoOriginal, PATHINFO_FILENAME);
 
             // Limitar el nombre del archivo a 50 caracteres
-            $nombreArchivo = substr($nombreArchivoOriginal, 0, 50 - strlen($extension)). "-" . $idUnico . "." . $extension;
+            $nombreArchivo = substr($nameSinExtension, 0, 50 - strlen($extension)). "-" . $idUnico . "." . $extension;
 
 
         
@@ -84,9 +85,10 @@ $errores = [];
                 $archivoTemporal_2 = $_FILES['archivo_2']['tmp_name'];
                 $idUnico2 = uniqid();
                 $extension2 = pathinfo($nombreOriginal_2, PATHINFO_EXTENSION);
+                $nameSinExtension2 = pathinfo($nombreOriginal_2, PATHINFO_FILENAME);
 
                 // Limitar el nombre del archivo a 50 caracteres
-                $nombreArchivo_2 = substr($nombreOriginal_2, 0, 50 - strlen($extension2)). "-" . $idUnico2 . "." . $extension2;
+                $nombreArchivo_2 = substr($nameSinExtension2, 0, 50 - strlen($extension2)). "-" . $idUnico2 . "." . $extension2;
                 // Validar el tipo y tamaño del archivo
                 $extensionesValidas_2 = array(
                     'application/msword', // Tipo MIME para archivos de Word DOC

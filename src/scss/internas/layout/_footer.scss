@@ -1,16 +1,24 @@
 .footer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 4rem;
+    padding:4rem;
     background-color: $primary-100;
-    height: 18rem;
+    height: 16rem;
+    .top-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-footer{
+        display: flex;
+        justify-content: center;
+    }
     .icon-footer{
         width:30rem;
     }
     p {
         color: $bg-100;
+        font-size: 1.3rem;
+        margin-top:1rem ;
     }
 
     .footer__social {
@@ -23,4 +31,6 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    
+    
 }

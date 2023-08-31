@@ -164,8 +164,8 @@ participantesInput.addEventListener('input', () => {
 });
 //funcion para descargar el archivo poster
 function descargarArchivoPoster() {
-    var archivoPoster = "../../resources/formatos/Diseño-poster-GUIA-VI-Encuentro-SENA.pptx"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
-    var nombreArchivoPoster = "Diseño-poster-GUIA-VI-Encuentro-SENA.pptx";
+    var archivoPoster = "../../resources/formatos/Poster.zip"; // Reemplaza "ruta_archivo" con la ruta real de tu archivo
+    var nombreArchivoPoster = "Poster.zip";
     var enlaceDescargaPoster = document.createElement('a');
     enlaceDescargaPoster.href = archivoPoster;
     enlaceDescargaPoster.download = nombreArchivoPoster;
