@@ -37,9 +37,10 @@ if($obtener && mysqli_num_rows($obtener)==1){
     $archivoTemporal = $_FILES['archivo']['tmp_name'];
     $idUnico = uniqid();
     $extension = pathinfo($nombreOriginal, PATHINFO_EXTENSION);
+    $nameSinExtension = pathinfo($nombreOriginal, PATHINFO_FILENAME);
 
     // Limitar el nombre del archivo a 50 caracteres
-    $nombreArchivo = substr($nombreOriginal, 0, 50 - strlen($extension)). "-" . $idUnico . "." . $extension;
+    $nombreArchivo = substr($nameSinExtension, 0, 50 - strlen($extension)). "-" . $idUnico . "." . $extension;
 
     // Validar el tipo y tamaño del archivo
     $extensionValida = 'application/pdf';    
