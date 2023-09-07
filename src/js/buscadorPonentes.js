@@ -43,12 +43,3 @@ filtrarResultados();
 // Mostrar todos los elementos al cargar la página
 filtrarResultados();
 
-//Pregunta para eliminar el registro
-function confirmar(id) {
-    let eliminar = window.confirm("Estas seguro de borrar este proyecto!")
-
-    if(eliminar){
-        window.location.href = `../../includes/config/borrarPonente.php?delete_id=${id}`;
-    }
-
-}

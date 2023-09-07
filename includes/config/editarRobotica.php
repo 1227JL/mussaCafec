@@ -7,9 +7,11 @@ $db = conectarDB();
 $id = limpiar_cadena($_POST['id']);
 $categoria = limpiar_cadena($_POST['categoria']);
 $institucion = limpiar_cadena($_POST['InstitucionRobotica']);
+$Representante = limpiar_cadena($_POST['representante']);
 $titulo = limpiar_cadena($_POST['tituloR']);
 $email = limpiar_cadena($_POST['correo']);
 $contacto = limpiar_cadena($_POST['contacto']);
+$participante2 = isset($_POST['participante2']) ? limpiar_cadena($_POST['participante2']) : "";
 
 $errores = [];
 
@@ -22,14 +24,18 @@ if($obtener && mysqli_num_rows($obtener)>0){
     categoria = ?,
     institucion = ?,
     nombre_proyecto = ?,
+    representante = ?,
+    participante2 = ?,
     contacto = ?,
     correo = ?
     WHERE id = ? "; 
     $stmt = mysqli_prepare($db, $query);
-    mysqli_stmt_bind_param($stmt, "sssssi",
+    mysqli_stmt_bind_param($stmt, "sssssssi",
         $categoria,
         $institucion,
         $titulo,
+        $Representante,
+        $participante2,
         $contacto,
         $email,
         $id

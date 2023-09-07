@@ -299,14 +299,18 @@
         }
     
         input::after {
-            content: "Los participantes deben estar registrados en un solo proyecto";
+            content: "Los participantes deben estar registrados en una sola categoria";
             display: flex;
             margin-left: 2rem;
             margin-top: -.2rem;
             position: absolute;
-            width: 90%;
+            width: 70%;
             font-size: 1.8rem;
             color: $primary-100;
+
+            @include tablet{
+                width:90% ;
+            }
         }
     
         label {

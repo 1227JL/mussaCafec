@@ -50,13 +50,19 @@
                 <input type="text" name="InstitucionRobotica" class="input" id="InstitucionRobotica" value="<?=$datos['institucion']?>">
             </div>
             <div class="coolinput">
-                <label for="tituloR" class="text">Titulo de proyecto:</label>
+                <label for="tituloR" class="text">Nombre de equipo:</label>
                 <input type="text" value="<?=$datos['nombre_proyecto']?>" class="input" id="tituloR" name="tituloR">
             </div>
             <div class="coolinput">
                 <label for="representante" class="text">Nombre del representante:</label>
                 <input type="text" value="<?=$datos['representante']?>" class="input" id="representante" name="representante">
             </div>
+            <?php if(!empty($datos['participante2'])): ?>
+            <div class="coolinput">
+                <label for="participante2" class="text">Participante 2:</label>
+                <input type="text" value="<?=$datos['participante2']?>" class="input" id="participante2" name="participante2">
+            </div>
+            <?php endif; ?>
             <div class="coolinput">
                 <label for="Email" class="text">Email:</label>
                 <input type="email" value="<?=$datos['correo']?>" name="correo" class="input" id="Email">
@@ -129,6 +135,12 @@
                         <span>Nombre del representante</span>
                         <p><?= $datosR['representante']?></p>
                     </div>
+                    <?php if(!empty($datosR['participante2'])):?>
+                        <div class="datos">
+                        <span>Partcipante 2</span>
+                        <p><?= $datosR['participante2']?></p>
+                    </div>
+                    <?php endif; ?>
                     <div class="datos">
                         <span>Contacto</span>
                         <p ><?= $datosR['contacto']?></p>

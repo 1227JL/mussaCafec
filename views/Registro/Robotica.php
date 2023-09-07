@@ -1,4 +1,3 @@
-
 <?php
     require_once '../../includes/templates/header.php';
     require_once '../../includes/config/utils.php';
@@ -44,9 +43,17 @@
                         <input type="text" placeholder="..." class="input" id="tituloR" name="tituloR">
                     </div>
                     <div class="coolinput">
+                        <label for="Nparticipantes" class="text">Numero de participantes:</label>
+                        <select name="Nparticipantes" id="Nparticipantes" class="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="coolinput">
                         <label for="representante" class="text">Representante del equipo:</label>
                         <input type="text" placeholder="Nombre completo del representante..." class="input" id="representante" name="representante">
                     </div>
+                    <div class="coolinput participantes"></div>
                     <div class="coolinput">
                         <label for="Email" class="text">Email:</label>
                         <input type="email" placeholder="Email del representante..." name="correo" class="input" id="Email">
@@ -86,4 +93,5 @@
     </section>
 </main>
 <?php BorrarErrores(); ?>
+<?php include "../../includes/templates/footer.php"; ?>
 <script src="../../src/js/form_robotica.js"></script>

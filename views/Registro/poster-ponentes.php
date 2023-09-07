@@ -195,4 +195,5 @@
     </section>
 </main>
 <?php BorrarErrores(); ?>
+<?php include "../../includes/templates/footer.php"; ?>
 <script src="../../src/js/form_academico.js"></script>

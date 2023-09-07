@@ -4,7 +4,7 @@ if(!isset($_SESSION)){
     session_start();
 } 
 
-//CONEXION DE EDUAR CRUZ
+// // CONEXION DE EDUAR CRUZ
 // function conectarDB(): mysqli {
 //     $db = new mysqli('localhost', 'root', '', 'mussacafec');
 

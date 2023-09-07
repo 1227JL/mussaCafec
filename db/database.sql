@@ -65,6 +65,7 @@ CREATE TABLE robotica (
     institucion VARCHAR(100) not null,
     nombre_proyecto VARCHAR(60) not null,
     representante VARCHAR(50) not null,
+    participante2 VARCHAR(50),
     contacto VARCHAR(15) not null,
     correo varchar(50)not null,
     confirmacion varchar(20) not null,

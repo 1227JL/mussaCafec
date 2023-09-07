@@ -48,3 +48,41 @@ $(document).ready(function(){
 
     });
 })
+
+const Nparticipantes = document.getElementById('Nparticipantes');
+const divParticipante = document.querySelector('.participantes');
+
+Nparticipantes.addEventListener('change', mostrarInput);
+
+function mostrarInput(e) {
+
+    if(e.target.value === "2"){
+        crearInput();
+    }else{
+        limpiarDiv();
+    }
+
+}
+
+function limpiarDiv() {
+    while (divParticipante.firstChild) {
+        divParticipante.removeChild(divParticipante.firstChild)
+    }
+}
+
+
+function crearInput() {
+    const input = document.createElement('input')
+    input.setAttribute('type', 'text')
+    input.setAttribute('name', "participante2")
+    input.setAttribute('id','participante2')
+    input.setAttribute('placeholder', 'Nombre completo')
+
+    const label = document.createElement('label')
+    label.setAttribute('for', 'particpante2')
+    label.textContent = "Participante 2"
+
+    divParticipante.appendChild(label)
+    divParticipante.appendChild(input)
+    
+}

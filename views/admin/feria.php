@@ -64,7 +64,7 @@
         <div class="titulo-cont"><h1 class="heading">Proyectos de feria empresarial registrados</h1></div>
         <div class="buscadores">
             <div class="coolinput">
-                <label for="buscadorFeria">Busca una empresa</label>
+                <label for="buscadorFeria">Buscador:</label>
                 <input type="text" id="buscadorFeria" placeholder="Buscar por título" class="input">
             </div>
         </div>
@@ -123,4 +123,4 @@
     </section>
 </main>
 <?php BorrarErrores(); ?>
-<script src="../../src/js/buscadorFeria.js"></script>
+<script src="/src/js/buscadorFeria.js"></script>

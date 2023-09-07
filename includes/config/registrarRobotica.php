@@ -11,6 +11,7 @@ $Representante = limpiar_cadena($_POST['representante']);
 $email = limpiar_cadena($_POST['correo']);
 $contacto = limpiar_cadena($_POST['contacto']);
 $check = $_POST['confirmacion'];
+$participante2 = isset($_POST['participante2']) ? limpiar_cadena($_POST['participante2']) : "";
 
 if($check == 'on'){
     $check = "Aceptó terminos";
@@ -32,15 +33,17 @@ if(count($errores)== 0){
     institucion,
     nombre_proyecto,
     representante,
+    participante2,
     contacto,
     correo,
-    confirmacion) VALUES ( ?, ?, ?, ?, ?, ?, ?);";
+    confirmacion) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = mysqli_prepare($db, $query);
-        mysqli_stmt_bind_param($stmt, "sssssss",
+        mysqli_stmt_bind_param($stmt, "ssssssss",
             $categoria,
             $institucion, 
             $titulo,
             $Representante,
+            $participante2,
             $contacto,
             $email,
             $check

@@ -1,6 +1,6 @@
 const categoriaCheckboxes = document.querySelectorAll('.categoria-checkbox');
 const buscadorInput = document.getElementById('buscadorR');
-const datosElements = document.querySelectorAll('.proyectosRobotica');
+const datosElements = document.querySelectorAll('.proyectos');
 
 function actualizarFiltros() {
     const textoBusqueda = buscadorInput.value.toLowerCase();
@@ -39,12 +39,4 @@ buscadorInput.addEventListener('input', actualizarFiltros);
 // Mostrar todos los resultados al cargar la página
 actualizarFiltros();
 
-//Pregunta para eliminar el registro
-function confirmar(id) {
-    let eliminar = window.confirm("Estas seguro de borrar este proyecto!")
 
-    if(eliminar){
-        window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`;
-    }
-
-}
