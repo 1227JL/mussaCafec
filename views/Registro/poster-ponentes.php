@@ -116,7 +116,7 @@
                                 <span class="drop-title">Selecciona tus archivos PDF o Power Point aqui.</span>
                                 <input type="file" name="archivo_1" accept=".pdf,.pptx" id="file-input">
                                 <span class="drop-title">Selecciona tus archivos Word aqui.</span>
-                                <input type="file" name="archivo_2" accept=".docx" id="file-input">
+                                <input type="file" name="archivo_2" accept=".docx,.doc" id="file-input">
                             </label>
                         </div>
                     </fieldset>

@@ -31,7 +31,7 @@
             $datos = mysqli_fetch_array($resultado)
     ?>
         <form action="../../includes/config/editarFeria.php" method="POST" id="form-feria" class="form" enctype="multipart/form-data">
-            <input type="hidden" name="id" value="">
+            <input type="hidden" name="id" value="<?=$datos['id']?>">
             <fieldset>
                 <legend>Informaciòn del Grupo</legend>
                 <div class="coolinput">
@@ -42,15 +42,15 @@
                     <label for="N-participantes" class="text">N° de participantes:</label>
                     <input type="text" class="input" id="N-participantes" name="participantes" value="<?=$datos['participantes']?>">
                 </div>
-                <div class="datos">
-                    <h3>Titulo de proyecto</h3>
-                    <p id="titulo_feria"><?= $datosFeria['titulo_proyecto'];?></p>
+                <div class="coolinput">
+                    <label for="tituloProyectoFeria" class="text">Titulo del proyecto:</label>
+                    <input type="text" name="tituloProyecto" class="input" id="tituloProyectoFeria" value="<?=$datos['titulo_proyecto']?>">
                 </div>
-                <div class="datos">
-                    <a onclick="confirmar(<?=$datosFeria['id'];?>)" class="delete">Eliminar registro</a>
-                </div>
-                <div class="datos">
-                    <a href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>
+                <div class="coolinput files">
+                    <label for="file-input" class="drop-container">
+                        <span class="drop-title">Si desea editar el archivo subelo en el campo correspodiente.</span>
+                        <input type="file" accept=".pdf,.doc,.docx" id="file-input" name="archivo">
+                    </label>
                 </div>
                 <input type="submit" value="Guardar Cambios" class="boton-verde-block">
             </fieldset>
@@ -85,6 +85,10 @@
                         <span>Titulo de proyecto</span>
                         <p id="titulo_feria"><?= $datosFeria['titulo_proyecto']?></p>
                     </div>
+                    <div class="datos">
+                            <span>archivo de informacion</span>
+                            <a href="../../uploads/feria/<?= $datosFeria['archivo']?>" download><?= $datosFeria['archivo']?></a>
+                        </div>
                     <a class="boton-rojo-block" onclick="eliminarRegistro(<?=$datosFeria['id']?>)" class="delete">Eliminar registro</a>
                     <a class="boton-verde-block" href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>
                     <script>

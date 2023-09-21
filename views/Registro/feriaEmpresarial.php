@@ -29,6 +29,10 @@
                     <fieldset>
                         <legend>Información de Participación</legend>
                         <div class="coolinput">
+                            <span class="form-title">Requerimientos para el Stand (Aclarar que máximo 2 personas por proyecto, propuesto
+                                        o emprendimiento)</span>
+                        </div>
+                        <div class="coolinput">
                             <label for="nombreInstitucionFeria" class="text">Institucion:</label>
                             <input type="text" placeholder="Nombre de la Institucion" name="nombreInstitucion" class="input" id="nombreInstitucionFeria">
                         </div>
@@ -40,9 +44,12 @@
                             <label for="tituloProyectoFeria" class="text">Titulo del proyecto:</label>
                             <input type="text" placeholder="..." name="tituloProyecto" class="input" id="tituloProyectoFeria">
                         </div>
-                        <div class="coolinput">
-                            <span class="form-title">Requerimientos para el Stand (Aclarar que máximo 2 personas por proyecto, propuesto
-                                        o emprendimiento)</span>
+                        <div class="coolinput files">
+                                <span class="form-title">El documento debe ir nombrado por el titulo del proyecto.</span>
+                            <label for="file-input" class="drop-container">
+                                <span class="drop-title">Selecciona tus archivos aqui.</span>
+                                <input type="file" accept=".pdf,.doc,.docx" id="file-input" name="archivo">
+                            </label>
                         </div>
                     </fieldset>
                     <input class="boton-verde-block" type="submit" value="Registrarme" class="button-registro">

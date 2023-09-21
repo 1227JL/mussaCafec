@@ -56,6 +56,7 @@ CREATE TABLE feria_empresarial (
     institucion varchar(100) not null,
     participantes VARCHAR (10) not null,
     titulo_proyecto VARCHAR(60) not null,
+    archivo VARCHAR (70) not null,
     CONSTRAINT pk_feria_empresarial PRIMARY KEY(id)
 )Engine=InnoDb;
 
