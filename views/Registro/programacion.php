@@ -18,7 +18,7 @@
 <section class="categorias seccion" id="Robotica">
     <div class="categorias_div">
         <div class="title-categorias">
-            <h1 class="heading">Robotica</h1>
+            <h1 class="heading">Maraton de Programación</h1>
         </div>    
         <div class="formulario">
             <form action="../../includes/config/registrarRobotica.php" method="POST" class="form" id="form-robotica">
@@ -28,10 +28,9 @@
                         <label for="categoria" class="text">Categoria de participacion:</label>
                         <select name="categoria" id="categoria" class="select">
                             <option value="">Seleccione una opcion</option>
-                            <option value="Robot Seguidor de línea velocista">Robot Seguidor de línea velocista</option>
-                            <option value="Robot Batalla de mini sumo (autónomo)">Robot Batalla de mini sumo (autónomo)</option>
-                            <option value="Robot Futbolero SENA CUP">Robot Futbolero SENA CUP</option>
-                            <option value="SENABOT">SENABOT</option>
+                            <option value="Principiante">Principiante</option>
+                            <option value="Intermedio">Intermedio</option>
+                            <option value="Avanzado">Avanzado</option>
                         </select>
                     </div>
                     <div class="coolinput">
@@ -70,7 +69,7 @@
             </form>
         </div>
     </div>
-    <section class="">
+    <section class="flex-wrap">
         <h1 class="heading">Otros Concursos</h1>
         <div class="cards">
             <div class="concurso">
@@ -91,9 +90,9 @@
             </div>
             <div class="concurso">
                 <div class="contain" data-aos="fade-up">
-                    <div class="card card-4">
-                        <h1>Maraton de Programación</h1>
-                        <a href="/views/Registro/programacion.php">Inscribete</a>
+                    <div class="card card-3">
+                        <h1>Torneo de Robótica</h1>
+                        <a href="/views/Registro/Robotica.php">Inscribete</a>
                     </div>
                 </div>
             </div>

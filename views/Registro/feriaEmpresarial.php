@@ -76,6 +76,14 @@
                     </div>
                 </div>
             </div>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-4">
+                        <h1>Maraton de Programación</h1>
+                        <a href="/views/Registro/programacion.php">Inscribete</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>

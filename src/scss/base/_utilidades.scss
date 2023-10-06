@@ -60,6 +60,10 @@
         background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/robotica.jpeg');
         background-position: center right;
     }
+    &.card-4 {
+        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .3)), url('/build/img/Concursos/maraton_de_programacion.jpg');
+        background-position: center right;
+    }
 
     h1 {
         font-weight: $bold;
@@ -544,23 +548,25 @@ button#descargar {
     }
 }
 
-.flex-wrap {
-    display: flex;
-    flex-direction: column;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
+    width: 100%;
+    margin: auto;
     
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 3rem;
-        .concurso {
-            flex: 1;
+    
+    @include tablet {
+        grid-template-columns: repeat(2, 2fr);
+        .concurso:last-of-type {
+            grid-column: span 2;
         }
-        
-        @include desktop {
-            width: 70%;
-            margin: auto;
-            grid-template-columns: repeat(2, 2fr);
+    }
+    
+    @include desktop {
+        grid-template-columns: repeat(3, 2fr);
+        .concurso:last-of-type {
+            grid-column:auto;
         }
     }
 }

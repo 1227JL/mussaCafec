@@ -51,6 +51,20 @@
                     </div>
                 </div>
             </div>
+            <div class="concurso">
+                <div class="contain" data-aos="fade-up">
+                    <div class="card card-4">
+                        <a href="/views/Registro/programacion.php">Registrate!</a>
+                    </div>
+                    <div class="concurso-informacion">
+                        <h1 class="heading">Maraton de Programación</h1>
+                        <p>1er Torneo de Robótica SENA Regional Casanare, proyecto que busca fortalecer las capacidades y habilidades en temas ciencia, tecnología, innovación, ingeniería y robótica a través de la competencia en robot seguidor de línea velocistas, robot de batalla mini-sumo, robot futbolero y robot SENABOT</p>
+                        <a onclick="archivoRobotica()">Términos y condiciones
+                            <img src="/build/assets/arrow-right.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="ponentes">
             <h1 class="heading">Ponentes</h1>
