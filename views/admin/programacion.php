@@ -10,7 +10,7 @@
     $totalFeria = obtenerTotal($db,'feria_empresarial');
     $totalRobotica = obtenerTotal($db,'robotica');
     $totalprogramacion = obtenerTotal($db,'programacion');
-    
+
     require_once 'includes/templates/nav.php';
 ?>
 <?php if(isset($_SESSION['editado'] )): ?>
@@ -24,14 +24,14 @@
         <?php echo isset($_SESSION['errores']) ? mostrarAlerta($_SESSION['errores'],'existeRegistro'):"" ?>
     </div>
     
-    <section id="robotica">
+    <section id="programacion">
     <?php if(isset($_GET['edit_id'])):
         $id = $_GET['edit_id'];
-        $resultado = obtenerDatos($db,'robotica',$id);
+        $resultado = obtenerDatos($db,'programacion',$id);
         if(mysqli_num_rows($resultado)> 0):
             $datos = mysqli_fetch_array($resultado)
     ?>
-    <form action="../../includes/config/editarRobotica.php" method="POST" class="form" id="form-robotica">
+    <form action="../../includes/config/editarProgramacion.php" method="POST" class="form" id="form-robotica">
         <input type="hidden" name="id" value="<?=$datos['id']?>">
         <fieldset>
             <legend>Información del Grupo</legend>
@@ -39,19 +39,19 @@
                 <label for="categoria" class="text">Categoria de participacion:</label>
                 <select name="categoria" id="categoria" class="select">
                     <option value="">Seleccione una opcion</option>
-                    <option value="Robot Seguidor de línea velocista" <?= $datos['categoria'] == 'Robot Seguidor de línea velocista' ? 'selected' : ''; ?>>Robot Seguidor de línea velocista</option>
-                    <option value="Robot Batalla de mini sumo (autónomo)" <?= $datos['categoria'] == 'Robot Batalla de mini sumo (autónomo)' ? 'selected' : ''; ?>>Robot Batalla de mini sumo (autónomo)</option>
-                    <option value="Robot Futbolero SENA CUP" <?= $datos['categoria'] == 'Robot Futbolero SENA CUP' ? 'selected' : ''; ?>>Robot Futbolero SENA CUP</option>
-                    <option value="SENABOT" <?= $datos['categoria'] == 'SENABOT' ? 'selected' : ''; ?>>SENABOT</option>
+                    <option value="Principiante" <?= $datos['categoria'] == 'Principiante' ? 'selected' : ''; ?>>Principiante</option>
+                    <option value="Intermedio" <?= $datos['categoria'] == 'Intermedio' ? 'selected' : ''; ?>>Intermedio</option>
+                    <option value="Avanzado" <?= $datos['categoria'] == 'Avanzado' ? 'selected' : ''; ?>>Avanzado</option>
+                    
                 </select>
             </div>
             <div class="coolinput">
-                <label for="InstitucionRobotica" class="text">Institucion:</label>
-                <input type="text" name="InstitucionRobotica" class="input" id="InstitucionRobotica" value="<?=$datos['institucion']?>">
+                <label for="Institucion" class="text">Institucion:</label>
+                <input type="text" name="Institucion" class="input" id="Institucion" value="<?=$datos['institucion']?>">
             </div>
             <div class="coolinput">
-                <label for="tituloR" class="text">Nombre de equipo:</label>
-                <input type="text" value="<?=$datos['nombre_proyecto']?>" class="input" id="tituloR" name="tituloR">
+                <label for="equipo" class="text">Nombre de equipo:</label>
+                <input type="text" value="<?=$datos['nombre_equipo']?>" class="input" id="equipo" name="equipo">
             </div>
             <div class="coolinput">
                 <label for="representante" class="text">Nombre del representante:</label>
@@ -61,6 +61,12 @@
             <div class="coolinput">
                 <label for="participante2" class="text">Participante 2:</label>
                 <input type="text" value="<?=$datos['participante2']?>" class="input" id="participante2" name="participante2">
+            </div>
+            <?php endif; ?>
+            <?php if(!empty($datos['participante3'])): ?>
+            <div class="coolinput">
+                <label for="participante3" class="text">Participante 2:</label>
+                <input type="text" value="<?=$datos['participante3']?>" class="input" id="participante3" name="participante3">
             </div>
             <?php endif; ?>
             <div class="coolinput">
@@ -79,44 +85,38 @@
     <?php endif; ?>
     <?php endif; ?>
     
-    <?php $resultadoRobotica = obtenerDatos($db,'robotica',null);
-        if(mysqli_num_rows($resultadoRobotica)>0): //se verifica si datos seleccionados?>    
-        <div class="titulo-cont"><h1 class="heading">Proyectos de robotica registrados</h1></div>
+    <?php $resultadoProgramacion = obtenerDatos($db,'programacion',null);
+        if(mysqli_num_rows($resultadoProgramacion)>0): //se verifica si datos seleccionados?>    
+        <div class="titulo-cont"><h1 class="heading">Proyectos de Programacion Registrados</h1></div>
         <div class="buscadores">
             <div class="checkbox more">
                 <div class="institucion">
                     <label>
-                        <input type="checkbox" class="categoria-checkbox" value="Robot Seguidor de línea velocista">
-                        Robot Seguidor de línea velocista
+                        <input type="checkbox" class="categoria-checkbox" value="Principiante">
+                        Principiante
                     </label>
                 </div>
                 <div class="institucion">
                     <label>
-                        <input type="checkbox" class="categoria-checkbox" value="Robot Batalla de mini sumo (autónomo)">
-                        Robot Batalla de mini sumo (autónomo)
+                        <input type="checkbox" class="categoria-checkbox" value="Intermedio">
+                        Intermedio
                     </label>
                 </div>
                 <div class="institucion">
                     <label>
-                        <input type="checkbox" class="categoria-checkbox" value="Robot Futbolero SENA CUP">
-                        Robot Futbolero SENA CUP
-                    </label>
-                </div>
-                <div class="institucion">
-                    <label>
-                        <input type="checkbox" class="categoria-checkbox" value="SENABOT">
-                        SENABOT
+                        <input type="checkbox" class="categoria-checkbox" value="Avanzado">
+                        Avanzado
                     </label>
                 </div>
             </div>
             <div class="coolinput">
-                <label for="buscadorR">Busca un proyecto</label>
-                <input type="text" id="buscadorR" placeholder="Buscar por Nombre de proyecto" class="input">
+                <label for="buscadorR">Busca un Equipo</label>
+                <input type="text" id="buscadorR" placeholder="Buscar por Nombre de equipo" class="input">
             </div>
         </div>
     <div class="resultadoRobotica">
         <?php  
-        while($datosR = mysqli_fetch_array($resultadoRobotica)): ?>
+        while($datosR = mysqli_fetch_array($resultadoProgramacion)): ?>
             <div class="proyectos">
                 <div class="proyecto">
                     <div class="datos">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="datos">
                         <span>Nombre de Equipo</span>
-                        <p class="Proyecto"><?= $datosR['nombre_proyecto']?></p>
+                        <p class="Proyecto"><?= $datosR['nombre_equipo']?></p>
                     </div>
                     <div class="datos">
                         <span>Nombre del representante</span>
@@ -139,6 +139,12 @@
                         <div class="datos">
                         <span>Partcipante 2</span>
                         <p><?= $datosR['participante2']?></p>
+                    </div>
+                    <?php endif; ?>
+                    <?php if(!empty($datosR['participante3'])):?>
+                        <div class="datos">
+                        <span>Partcipante 3</span>
+                        <p><?= $datosR['participante3']?></p>
                     </div>
                     <?php endif; ?>
                     <div class="datos">
@@ -154,7 +160,7 @@
                         <p ><?= $datosR['confirmacion']?></p>
                     </div>
                     <a class="boton-rojo-block" onclick="eliminarRegistro(<?= $datosR['id']?>)">Eliminar registro</a>
-                    <a class="boton-verde-block" href="Robotica.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>
+                    <a class="boton-verde-block" href="programacion.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>
                     <script>
                         function eliminarRegistro(id){
                             swal({
@@ -169,7 +175,7 @@
                                     swal("¡Poof! ¡El registro ha sido eliminado!", {
                                         icon: "success",
                                     }).then((willDelete) => {
-                                        window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`
+                                        window.location.href = `../../includes/config/borrarProgramacion.php?delete_id=${id}`
                                     });
                                 } else {
                                     swal("¡Tu registro está a salvo!");
@@ -192,4 +198,3 @@
 </main>
 <?php BorrarErrores(); ?>
 <script src="../../src/js/buscadorRobotica.js"></script>
-

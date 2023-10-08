@@ -9,8 +9,8 @@
     $totalPoster = obtenerTotal($db,'poster');
     $totalFeria = obtenerTotal($db,'feria_empresarial');
     $totalRobotica = obtenerTotal($db,'robotica');
-?>
-<?php
+    $totalprogramacion = obtenerTotal($db,'programacion');
+    
     require_once 'includes/templates/nav.php';
 ?>
 <?php if(isset($_SESSION['editado'] )): ?>
