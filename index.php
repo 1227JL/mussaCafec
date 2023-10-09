@@ -58,7 +58,7 @@
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Maraton de Programación</h1>
-                        <p>1er Torneo de Robótica SENA Regional Casanare, proyecto que busca fortalecer las capacidades y habilidades en temas ciencia, tecnología, innovación, ingeniería y robótica a través de la competencia en robot seguidor de línea velocistas, robot de batalla mini-sumo, robot futbolero y robot SENABOT</p>
+                        <p>Únete a nosotros para una jornada llena de desafíos y codificación, donde la creatividad y la destreza en la programación se combinan en un ambiente de aprendizaje. Tendrás la flexibilidad de trabajar en equipo o en solitario, enfrentándote a intrigantes problemas de programación que pondrán a prueba tus habilidades y tu ingenio</p>
                         <a onclick="archivoRobotica()">Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
