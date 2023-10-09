@@ -3,7 +3,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     width: 95%;
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 4rem auto;
 
     a {
         display: flex;
@@ -17,8 +17,9 @@
         height: 10rem;
         grid-template-columns: repeat(2, 1fr);
     }
+
     @include desktop {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
 } 

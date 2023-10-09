@@ -191,7 +191,7 @@
     <?php else: //si no se encontraron datos en la busqueda ?>
         <div class="sin-registros">
             <h3>Lo sentimos!</h3>
-            <p>En el momento no hay ningun proyecto de robotica registrado</p>
+            <p>En el momento no hay ningun equipo de Programación registrado</p>
         </div>
     <?php endif; ?>
     </section>

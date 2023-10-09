@@ -2,12 +2,14 @@
     @include alert($accent-200, $bg-100);
     padding: 0;
 
-    h1 {
-        font-weight: $bold;
-        margin: 0;
-    }
     p {
+        text-align: center;
         color: $bg-100;
+    }
+
+    h3 {
+        font-weight: bold;
+        text-align: center;
         margin-bottom: 1rem;
     }
 }
@@ -16,6 +18,7 @@
     @include alert($primary-100, $bg-100);
 
     p {
+        text-align: center;
         color: $bg-100;
     }
 }
