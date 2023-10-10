@@ -98,6 +98,12 @@
                 </div>
                 <div class="institucion">
                     <label>
+                        <input type="checkbox" class="categoria-checkbox" value="Basico">
+                        Basico
+                    </label>
+                </div>
+                <div class="institucion">
+                    <label>
                         <input type="checkbox" class="categoria-checkbox" value="Intermedio">
                         Intermedio
                     </label>

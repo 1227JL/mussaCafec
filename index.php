@@ -59,7 +59,7 @@
                     <div class="concurso-informacion">
                         <h1 class="heading">Maraton de Programación</h1>
                         <p>Únete a nosotros para una jornada llena de desafíos y codificación, donde la creatividad y la destreza en la programación se combinan en un ambiente de aprendizaje. Tendrás la flexibilidad de trabajar en equipo o en solitario, enfrentándote a intrigantes problemas de programación que pondrán a prueba tus habilidades y tu ingenio</p>
-                        <a onclick="archivoRobotica()">Términos y condiciones
+                        <a onclick="archivoProgramacion()">Términos y condiciones
                             <img src="/build/assets/arrow-right.png" alt="">
                         </a>
                     </div>

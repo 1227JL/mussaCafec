@@ -46,3 +46,9 @@ function archivoFeria() {
     var rutaArchivo = "/resources/terminos/terminos_feriaEmpresarial.pdf";
     window.open(rutaArchivo, "_blank");
 }
+
+//VER TERMINOS PARA CATERORIA MARATON DE PROGRAMACION
+function archivoProgramacion() {
+    var rutaArchivo = "/resources/terminos/I-MARATÓN-DE PROGRAMACIÓN-SENNOVA.pdf";
+    window.open(rutaArchivo, "_blank");
+}
