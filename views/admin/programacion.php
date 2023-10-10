@@ -40,6 +40,7 @@
                 <select name="categoria" id="categoria" class="select">
                     <option value="">Seleccione una opcion</option>
                     <option value="Principiante" <?= $datos['categoria'] == 'Principiante' ? 'selected' : ''; ?>>Principiante</option>
+                    <option value="Principiante" <?= $datos['categoria'] == 'Basico' ? 'selected' : ''; ?>>Basico</option>
                     <option value="Intermedio" <?= $datos['categoria'] == 'Intermedio' ? 'selected' : ''; ?>>Intermedio</option>
                     <option value="Avanzado" <?= $datos['categoria'] == 'Avanzado' ? 'selected' : ''; ?>>Avanzado</option>
                     

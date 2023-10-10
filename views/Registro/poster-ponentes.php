@@ -86,10 +86,11 @@
                         <div class="coolinput">
                             <label for="Ponentes" class="text">Numero de ponentes:</label>
                             <select id="Ponentes" name="numeroPonentes" class="select" onchange="crearCampos()">
-                                <option value="">Seleccione una opcion</option>
+                                <option value="" selected disabled>Seleccione una opcion</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
+                                <option value="4">4</option>
                             </select>
                         </div>
                         <div class="coolinput" id="contenedorPonentes"></div>

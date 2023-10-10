@@ -2,6 +2,13 @@
     require_once 'includes/config/funciones.php';
     $inicio = true;
     incluirTemplate('header', $inicio);
+
+    if ($_SERVER["HTTPS"] != "on") {
+        // Redirige a la versión HTTPS de la misma página
+        $redirect_url = "https://www.mussacafec.com/";
+        header("Location: $redirect_url");
+        exit();
+    }
 ?>
     <main class="inicio">
         <div class="contain">     

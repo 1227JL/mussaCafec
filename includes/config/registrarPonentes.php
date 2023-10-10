@@ -24,6 +24,10 @@ $nombre_3 = isset($_POST['nombre3']) ? limpiar_cadena($_POST['nombre3']) : null 
 $correo_3 = isset($_POST['correo3']) ? limpiar_cadena($_POST['correo3']) : null ;
 $contacto_3 = isset($_POST['contacto3']) ? limpiar_cadena($_POST['contacto3']) : null;
 
+$nombre_4 = isset($_POST['nombre4']) ? limpiar_cadena($_POST['nombre4']) : null ;
+$correo_4 = isset($_POST['correo4']) ? limpiar_cadena($_POST['correo4']) : null ;
+$contacto_4 = isset($_POST['contacto4']) ? limpiar_cadena($_POST['contacto4']) : null;
+
 
 $errores = [];
 
@@ -132,12 +136,15 @@ $errores = [];
         ponente_3,
         correo_3,
         contacto_3,
+        ponente_4,
+        correo_4,
+        contacto_4,
         titulo_proyecto,
         tipo_proyecto,
         archivo_1,
-        archivo_2) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        archivo_2) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = mysqli_prepare($db, $query);
-        mysqli_stmt_bind_param($stmt, "ssssssssssssssssss",
+        mysqli_stmt_bind_param($stmt, "sssssssssssssssssssss",
             $ejeTematico, 
             $institucion, 
             $titulada, 
@@ -152,6 +159,9 @@ $errores = [];
             $nombre_3,
             $correo_3, 
             $contacto_3,
+            $nombre_4,
+            $correo_4, 
+            $contacto_4,
             $titulo,
             $tipoProyecto,
             $nombreArchivo,
