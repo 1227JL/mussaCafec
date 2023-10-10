@@ -5,16 +5,16 @@ if(!isset($_SESSION)){
 } 
 
 // CONEXION DE EDUAR CRUZ
-function conectarDB(): mysqli {
-    $db = new mysqli('localhost', 'root', '', 'mussacafec');
+// function conectarDB(): mysqli {
+//     $db = new mysqli('localhost', 'root', '', 'mussacafec');
 
-    if(!$db){
-        echo 'Error, no se pudo conectar';
-        exit;
-    }
+//     if(!$db){
+//         echo 'Error, no se pudo conectar';
+//         exit;
+//     }
 
-    return $db;
-}
+//     return $db;
+// }
 
 // CONEXION DE JULIAN LOPEZ
 // function conectarDB(): mysqli {
@@ -29,13 +29,13 @@ function conectarDB(): mysqli {
 // }
 
 //CONEXION DEL HOST
-// function conectarDB(): mysqli {
-//     $db = new mysqli('15.235.85.112', 'mussacaf_root', 'Mussacafec2023*', 'mussacaf_mussacafec');
+function conectarDB(): mysqli {
+    $db = new mysqli('15.235.85.112', 'mussacaf_root', 'Mussacafec2023*', 'mussacaf_mussacafec');
 
-//     if(!$db){
-//         echo 'Error, no se pudo conectar';
-//         exit;
-//     }
+    if(!$db){
+        echo 'Error, no se pudo conectar';
+        exit;
+    }
 
-//     return $db;
-// }
+    return $db;
+}
