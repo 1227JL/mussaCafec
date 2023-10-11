@@ -49,7 +49,7 @@
                         <div class="coolinput">
                             <label for="ejetematico" class="text">Eje tematico:</label>
                             <select id="ejetematico" class="select" onchange="mostrar()" name="ejetematico">
-                                <option value="">Seleccione una opcion</option>
+                                <option value="" selected disabled>Seleccione una opcion</option>
                                 <option value="Empresarial">Empresarial</option>
                                 <option value="Agroindustrial">Agroindustrial</option>
                                 <option value="Agropecuario">Agropecuario</option>
@@ -101,7 +101,7 @@
                         <div class="coolinput">
                             <label for="Institucion" class="text">Tipo de proyecto:</label>
                             <select name="tipoProyecto" id="Institucion" class="select">
-                                <option value="">Seleccione una opcion</option>
+                                <option value=""selected disabled>Seleccione una opcion</option>
                                 <option value="Formativo">Formativo</option>
                                 <option value="Productivo">Productivo</option>
                                 <option value="SENNOVA">SENNOVA</option>
@@ -147,7 +147,7 @@
                         <div class="coolinput">
                             <label for="participantes" class="text">Participantes:</label>
                             <select id="participantes" name="participantes" class="select" onchange="crearCampos()">
-                                <option value="">Seleccione una opcion</option>
+                                <option value="" selected disabled>Seleccione una opcion</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>

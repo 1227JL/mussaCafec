@@ -27,7 +27,7 @@
                     <div class="coolinput">
                         <label for="categoria" class="text">Categoria de participacion:</label>
                         <select name="categoria" id="categoria" class="select">
-                            <option value="">Seleccione una opcion</option>
+                            <option value="" selected disabled>Seleccione una opcion</option>
                             <option value="Robot Seguidor de línea velocista">Robot Seguidor de línea velocista</option>
                             <option value="Robot Batalla de mini sumo (autónomo)">Robot Batalla de mini sumo (autónomo)</option>
                             <option value="Robot Futbolero SENA CUP">Robot Futbolero SENA CUP</option>
