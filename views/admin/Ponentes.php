@@ -113,6 +113,20 @@
                         <input type="text" value="<?= $datos['contacto_3']?>" name="contacto3" class="input" id="contacto3">
                     </div>
                 <?php endif; ?>
+                <?php if(!empty($datos['ponente_4'])): ?>
+                    <div class="coolinput">
+                        <label for="nombre4" class="text">Nombre Ponente 4:</label>
+                        <input type="text" value="<?= $datos['ponente_4']?>" name="nombre4" class="input" id="nombre4">
+                    </div>
+                    <div class="coolinput">
+                        <label for="correo4" class="text">Correo:</label>
+                        <input type="text" value="<?= $datos['correo_4']?>" name="correo4" class="input" id="correo4">
+                    </div>
+                    <div class="coolinput">
+                        <label for="contacto4" class="text">Contacto:</label>
+                        <input type="text" value="<?= $datos['contacto_4']?>" name="contacto4" class="input" id="contacto4">
+                    </div>
+                <?php endif; ?>
                 <div class="coolinput">
                     <label for="titulo" class="text">Titulo del Proyecto:</label>
                     <input type="text" value="<?= $datos['titulo_proyecto']?>" name="titulo" class="input" id="titulo">
@@ -237,6 +251,20 @@
                             <div class="datos">
                                 <span>Contacto ponente 3</span>
                                 <p><?= $datos['contacto_3']?></p>
+                            </div>
+                            <?php endif; ?>
+                            <?php if(!empty($datos['ponente_4'])): ?>
+                                <div class="datos">
+                                <span>Nombre ponente 4</span>
+                                <p><?= $datos['ponente_4']?></p>
+                            </div>
+                            <div class="datos">
+                                <span>Email ponente 4</span>
+                                <p><?= $datos['correo_4']?></p>
+                            </div>
+                            <div class="datos">
+                                <span>Contacto ponente 4</span>
+                                <p><?= $datos['contacto_4']?></p>
                             </div>
                             <?php endif; ?>
                             <div class="datos">

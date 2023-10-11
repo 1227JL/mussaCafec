@@ -29,6 +29,7 @@
                         <select name="categoria" id="categoria" class="select">
                             <option value="" selected disabled>Seleccione una opcion</option>
                             <option value="Principiante">Principiante</option>
+                            <option value="Basico">Basico</option>
                             <option value="Intermedio">Intermedio</option>
                             <option value="Avanzado">Avanzado</option>
                         </select>

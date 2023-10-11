@@ -17,20 +17,8 @@ if(!isset($_SESSION)){
 // }
 
 // CONEXION DE JULIAN LOPEZ
-function conectarDB(): mysqli {
-    $db = new mysqli('localhost', 'root', '1227060123', 'mussacafec');
-
-    if(!$db){
-        echo 'Error, no se pudo conectar';
-        exit;
-    }
-
-    return $db;
-}
-
-//CONEXION DEL HOST
 // function conectarDB(): mysqli {
-//     $db = new mysqli('15.235.85.112', 'mussacaf_root', 'Mussacafec2023*', 'mussacaf_mussacafec');
+//     $db = new mysqli('localhost', 'root', '1227060123', 'mussacafec');
 
 //     if(!$db){
 //         echo 'Error, no se pudo conectar';
@@ -39,3 +27,15 @@ function conectarDB(): mysqli {
 
 //     return $db;
 // }
+
+//CONEXION DEL HOST
+function conectarDB(): mysqli {
+    $db = new mysqli('15.235.85.112', 'mussacaf_root', 'Mussacafec2023*', 'mussacaf_mussacafec');
+
+    if(!$db){
+        echo 'Error, no se pudo conectar';
+        exit;
+    }
+
+    return $db;
+}
