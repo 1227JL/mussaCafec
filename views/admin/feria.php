@@ -86,34 +86,34 @@
                         <p id="titulo_feria"><?= $datosFeria['titulo_proyecto']?></p>
                     </div>
                     <div class="datos">
-                            <span>archivo de informacion</span>
-                            <a href="../../uploads/feria/<?= $datosFeria['archivo']?>" download><?= $datosFeria['archivo']?></a>
-                        </div>
-                    <a class="boton-rojo-block" onclick="eliminarRegistro(<?=$datosFeria['id']?>)" class="delete">Eliminar registro</a>
-                    <a class="boton-verde-block" href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>
-                    <script>
-                        function eliminarRegistro(id){
-                            swal({
-                                title: "¿Estás seguro?",
-                                text: "Una vez eliminado, ¡no podrás recuperar este registro!",
-                                icon: "warning",
-                                buttons: true,
-                                dangerMode: true,
-                            })
-                            .then((willDelete) => {
-                                if (willDelete) {
-                                    swal("¡Poof! ¡El registro ha sido eliminado!", {
-                                        icon: "success",
-                                    }).then((willDelete) => {
-                                        window.location.href = `../../includes/config/borrarferia.php?delete_id=${id}`
-                                    });
-                                } else {
-                                    swal("¡Tu registro está a salvo!");
-                                }
-                            });
-                        }
-                    </script>
+                        <span>archivo de informacion</span>
+                        <a href="../../uploads/feria/<?= $datosFeria['archivo']?>" download><?= $datosFeria['archivo']?></a>
+                    </div>
                 </div>
+                <a class="boton-rojo-block" onclick="eliminarRegistro(<?=$datosFeria['id']?>)" class="delete">Eliminar registro</a>
+                <a class="boton-verde-block" href="feria.php?edit_id=<?=$datosFeria['id']?>" class="edit">Editar registro</a>
+                <script>
+                    function eliminarRegistro(id){
+                        swal({
+                            title: "¿Estás seguro?",
+                            text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                            icon: "warning",
+                            buttons: true,
+                            dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                    icon: "success",
+                                }).then((willDelete) => {
+                                    window.location.href = `../../includes/config/borrarferia.php?delete_id=${id}`
+                                });
+                            } else {
+                                swal("¡Tu registro está a salvo!");
+                            }
+                        });
+                    }
+                </script>
                 <br>
             </div>
         <?php endwhile; ?>  

@@ -247,31 +247,31 @@
                                 <span>archivo de informacion</span>
                                 <a href="../../uploads/ponentes/<?= $datos['archivo_2']?>" download><?= $datos['archivo_2']?></a>
                             </div>
-                            <a class="boton-rojo-block" class="delete" onclick="eliminarRegistro(<?=$datos['id']?>)">Eliminar registro</a>
-                            <a class="boton-verde-block" href="Ponentes.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>
-                            <script>
-                                function eliminarRegistro(id){
-                                    swal({
-                                        title: "¿Estás seguro?",
-                                        text: "Una vez eliminado, ¡no podrás recuperar este registro!",
-                                        icon: "warning",
-                                        buttons: true,
-                                        dangerMode: true,
-                                    })
-                                    .then((willDelete) => {
-                                        if (willDelete) {
-                                            swal("¡Poof! ¡El registro ha sido eliminado!", {
-                                                icon: "success",
-                                            }).then((willDelete) => {
-                                                window.location.href = `../../includes/config/borrarPonente.php?delete_id=${id}`
-                                            });
-                                        } else {
-                                            swal("¡Tu registro está a salvo!");
-                                        }
-                                    });
-                                }
-                            </script>
                         </div>
+                        <a class="boton-rojo-block" class="delete" onclick="eliminarRegistro(<?=$datos['id']?>)">Eliminar registro</a>
+                        <a class="boton-verde-block" href="Ponentes.php?edit_id=<?=$datos['id']?>"  class="edit">Editar registro</a>
+                        <script>
+                            function eliminarRegistro(id){
+                                swal({
+                                    title: "¿Estás seguro?",
+                                    text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                                    icon: "warning",
+                                    buttons: true,
+                                    dangerMode: true,
+                                })
+                                .then((willDelete) => {
+                                    if (willDelete) {
+                                        swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                            icon: "success",
+                                        }).then((willDelete) => {
+                                            window.location.href = `../../includes/config/borrarPonente.php?delete_id=${id}`
+                                        });
+                                    } else {
+                                        swal("¡Tu registro está a salvo!");
+                                    }
+                                });
+                            }
+                        </script>
                         <br>
                     </div>
                 <?php endwhile; ?>  

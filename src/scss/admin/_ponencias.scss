@@ -35,22 +35,31 @@ main.contain {
         .proyectos {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1rem;
     
             .proyecto {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
-                padding: 2.5rem;
                 background-color: $bg-200;
                 border-radius: .5rem;
-    
+                
                 .datos {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    padding: 1rem;
                     justify-content: space-between;
-                    align-items: flex-start;
+                    border: 1px solid $bg-200;
+
+                    &:nth-child(even){
+                        background-color: $bg-300 ;
+                    }
+
+                    &:hover {
+                        background-color: $bg-100;
+                        transform:  scale(1.005);
+                        transition: all .1s ease;
+                    }
     
                     span {
                         font-weight: $bold;
@@ -65,10 +74,10 @@ main.contain {
                         flex-direction: row;
                     }
                 }
-    
-                a {
-                    margin: 0;
-                }
+            }
+
+            a {
+                margin: 0;
             }
         }
     }

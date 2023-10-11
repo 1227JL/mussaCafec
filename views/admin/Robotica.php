@@ -153,31 +153,31 @@
                         <span>Terminos</span>
                         <p ><?= $datosR['confirmacion']?></p>
                     </div>
-                    <a class="boton-rojo-block" onclick="eliminarRegistro(<?= $datosR['id']?>)">Eliminar registro</a>
-                    <a class="boton-verde-block" href="Robotica.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>
-                    <script>
-                        function eliminarRegistro(id){
-                            swal({
-                                title: "¿Estás seguro?",
-                                text: "Una vez eliminado, ¡no podrás recuperar este registro!",
-                                icon: "warning",
-                                buttons: true,
-                                dangerMode: true,
-                            })
-                            .then((willDelete) => {
-                                if (willDelete) {
-                                    swal("¡Poof! ¡El registro ha sido eliminado!", {
-                                        icon: "success",
-                                    }).then((willDelete) => {
-                                        window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`
-                                    });
-                                } else {
-                                    swal("¡Tu registro está a salvo!");
-                                }
-                            });
-                        }
-                    </script>
                 </div>
+                <a class="boton-rojo-block" onclick="eliminarRegistro(<?= $datosR['id']?>)">Eliminar registro</a>
+                <a class="boton-verde-block" href="Robotica.php?edit_id=<?=$datosR['id']?>" class="edit">Editar registro</a>
+                <script>
+                    function eliminarRegistro(id){
+                        swal({
+                            title: "¿Estás seguro?",
+                            text: "Una vez eliminado, ¡no podrás recuperar este registro!",
+                            icon: "warning",
+                            buttons: true,
+                            dangerMode: true,
+                        })
+                        .then((willDelete) => {
+                            if (willDelete) {
+                                swal("¡Poof! ¡El registro ha sido eliminado!", {
+                                    icon: "success",
+                                }).then((willDelete) => {
+                                    window.location.href = `../../includes/config/borrarRobotica.php?delete_id=${id}`
+                                });
+                            } else {
+                                swal("¡Tu registro está a salvo!");
+                            }
+                        });
+                    }
+                </script>
                 <br>
             </div>
         <?php endwhile; ?>  
