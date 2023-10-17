@@ -28,7 +28,7 @@
                     <a href="/">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/views/Registro/poster-ponentes.php">Registro</a>
+                    <!--<a href="/views/Registro/poster-ponentes.php">Registro</a>-->
                 </li>
                 <?php if(isset($_SESSION['login']) && $_SESSION['login']): ?>
                 <li class="nav__item">
@@ -54,7 +54,7 @@
                     <a href="/">Inicio</a>
                 </li>
                 <li class="nav__item">
-                    <a href="/views/Registro/poster-ponentes.php">Registro</a>
+                    <!--<a href="/views/Registro/poster-ponentes.php">Registro</a>-->
                 </li>
                 <?php if(isset($_SESSION['login']) && $_SESSION['login']): ?>
                 <li class="nav__item">

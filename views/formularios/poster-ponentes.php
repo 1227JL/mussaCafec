@@ -101,7 +101,7 @@
                         <div class="coolinput">
                             <label for="Institucion" class="text">Tipo de proyecto:</label>
                             <select name="tipoProyecto" id="Institucion" class="select">
-                                <option value=""selected disabled>Seleccione una opcion</option>
+                                <option value="" selected disabled>Seleccione una opcion</option>
                                 <option value="Formativo">Formativo</option>
                                 <option value="Productivo">Productivo</option>
                                 <option value="SENNOVA">SENNOVA</option>

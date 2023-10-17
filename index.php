@@ -3,12 +3,12 @@
     $inicio = true;
     incluirTemplate('header', $inicio);
 
-    if ($_SERVER["HTTPS"] != "on") {
-        // Redirige a la versión HTTPS de la misma página
-        $redirect_url = "https://www.mussacafec.com/";
-        header("Location: $redirect_url");
-        exit();
-    }
+    // if ($_SERVER["HTTPS"] != "on") {
+    //     // Redirige a la versión HTTPS de la misma página
+    //     $redirect_url = "https://www.mussacafec.com/";
+    //     header("Location: $redirect_url");
+    //     exit();
+    // }
 ?>
     <main class="inicio">
         <div class="contain">     
@@ -19,7 +19,7 @@
             <div class="concurso">
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-1">
-                        <a href="/views/Registro/poster-ponentes.php">Registrate!</a>
+                        <!-- <a href="/views/Registro/poster-ponentes.php">Registrate!</a> -->
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Academico</h1>
@@ -33,7 +33,7 @@
             <div class="concurso">
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-2">
-                        <a href="/views/Registro/feriaEmpresarial.php">!Registrate</a>
+                        <!-- <a href="/views/Registro/feriaEmpresarial.php">!Registrate</a> -->
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Feria Empresarial</h1>
@@ -47,7 +47,7 @@
             <div class="concurso">
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-3">
-                        <a href="/views/Registro/Robotica.php">Registrate!</a>
+                        <!-- <a href="/views/Registro/Robotica.php">Registrate!</a> -->
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Torneo de Robótica</h1>
@@ -61,7 +61,7 @@
             <div class="concurso">
                 <div class="contain" data-aos="fade-up">
                     <div class="card card-4">
-                        <a href="/views/Registro/programacion.php">Registrate!</a>
+                        <!-- <a href="/views/Registro/programacion.php">Registrate!</a> -->
                     </div>
                     <div class="concurso-informacion">
                         <h1 class="heading">Maraton de Programación</h1>
